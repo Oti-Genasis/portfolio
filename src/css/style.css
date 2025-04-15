@@ -1,0 +1,73 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+body{
+    background-color: rgb(27, 27, 27);
+    color: #fff;
+
+    
+}
+
+.navbar{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 30px 48px;
+    background-color: transparent;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+
+    font-family: "Montserrat", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 600;
+    font-style: normal;
+    font-size: 19px;
+}
+
+.logo{
+    font-size: 32px;
+    text-decoration: none;
+    color: white;
+    font-family: "Pacifico", cursive;
+    font-weight: 400;
+    font-style: normal;
+    gap: 5px;
+}
+
+.first-l{
+    color: #ff0000;
+}
+  
+.nav-links {
+    list-style: none;
+    display: flex;
+    gap: 15px;
+}
+  
+.nav-links a{
+    color: white;
+    text-decoration: none;
+    font-weight: 500;
+    transition: color 0.3s ease;
+    padding: 15px 20px;
+}
+  
+.nav-links a:hover {
+    color: #ff0000;
+}
+  
+.hire-me-btn {
+    background-color: #ff0000;
+    padding: 15px 24px;
+    border-radius: 5px;
+    font-weight: bold;
+}
+  
+.hire-me-btn:hover {
+    background-color: white;
+}
