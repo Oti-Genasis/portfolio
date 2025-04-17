@@ -50,7 +50,7 @@ class Particle {
       // Draw the particle as a filled circle
       ctx.beginPath();
       ctx.arc(this.x, this.y, this.radius, 0, Math.PI * 2);
-      ctx.fillStyle = "#ffffff"; // Particle color
+      ctx.fillStyle = "#808080"; // Particle color
       ctx.fill();
     }
   
@@ -76,7 +76,7 @@ function connect(p1, p2) {
   if (distance < maxDistance) {
     ctx.beginPath();
     // Line opacity decreases with distance
-    ctx.strokeStyle = "rgba(255, 255, 255, " + (1 - distance / maxDistance) + ")";
+    ctx.strokeStyle = "rgba(128, 128, 128, " + (1 - distance / maxDistance) + ")";
     ctx.lineWidth = 1;
     ctx.moveTo(p1.x, p1.y);
     ctx.lineTo(p2.x, p2.y);

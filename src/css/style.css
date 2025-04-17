@@ -1,75 +1,19 @@
-*{
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
+html {
+    scroll-behavior: smooth;
+}
+  
 
-body{
+body {
     background-color: rgb(27, 27, 27);
     color: #fff;
 
-    
-}
 
-.navbar{
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 22px 48px;
-    background-color: transparent;
-    position: sticky;
-    top: 0;
-    z-index: 1000;
-
-    font-family: "Montserrat", sans-serif;
-    font-optical-sizing: auto;
-    font-weight: 600;
-    font-style: normal;
-    font-size: 17px;
-}
-
-.logo{
-    font-size: 32px;
-    text-decoration: none;
-    color: white;
-    font-family: "Pacifico", cursive;
-    font-weight: 400;
-    font-style: normal;
-    gap: 5px;
-}
-
-.first-l{
-    color: #ff0000;
-}
-  
-.nav-links {
-    list-style: none;
-    display: flex;
-    gap: 15px;
-}
-  
-.nav-links a{
-    color: white;
-    text-decoration: none;
-    font-weight: 500;
-    transition: color 0.3s ease;
-    padding: 15px 20px;
-}
-  
-.nav-links a:hover {
-    color: #ff0000;
-}
-  
-.hire-me-btn {
-    background-color: #ff0000;
-    padding: 15px 24px;
-    border-radius: 5px;
-    font-weight: bold;
-}
-  
-.hire-me-btn:hover {
-    background-color: #ffffff;
 }
 
 #particles {
@@ -78,7 +22,229 @@ body{
     left: 0;
     width: 100%;
     height: 100%;
-    z-index: -1; 
+    z-index: -1;
     background: rgb(27, 27, 27);
-  }
+}
+
+/* Navbar & elements */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 28px 48px;
+    background-color: transparent;
+    position: fixed;
+    top: 0;
+    z-index: 1000;
+    transition: background-color 0.3s ease, backdrop-filter 0.3s ease;
+    width: 100%;
+
+    font-family: "Kode Mono", monospace;
+    font-optical-sizing: auto;
+    font-weight: 600;
+    font-style: normal;
+    font-size: 17px;
+}
+
+.navbar.scrolled {
+    backdrop-filter: blur(10px);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
   
+
+.logo {
+    font-size: 28px;
+    text-decoration: none;
+    color: white;
+    font-family: "Kode Mono", monospace;
+    font-weight: 400;
+    font-style: normal;
+    gap: 5px;
+
+}
+
+.first-l {
+    color: #ff0000;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    gap: 15px;
+}
+
+.nav-links a {
+    color: white;
+    text-decoration: none;
+    font-weight: 500;
+    transition: color 0.3s ease;
+    padding: 15px 20px;
+}
+
+.nav-links a:hover {
+    color: #ff0000;
+}
+
+.hire-me-btn {
+    background-color: #ff0000;
+    padding: 15px 24px;
+    border-radius: 1px;
+    font-weight: bold;
+    border: 2px solid #ff0000;
+    
+}
+
+.hire-me-btn:hover {
+    background-color: transparent;
+    transition: 0.3s;
+}
+/* Navbar & elements end*/
+
+
+/* Hero Section & elements */
+.hero {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 60px 48px;
+    background-color: transparent;
+    color: white;
+    font-family: "Kode Mono", monospace;
+}
+
+.hero-content {
+    display: flex;
+    width: 100%;
+    flex-wrap: wrap;
+    gap: 100px;
+}
+
+.hero-text {
+    flex: 1 1 500px;
+    padding-top: 5%;
+}
+
+.hero-photo {
+    flex: 1 1 400px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.hero-photo img {
+    width: 567px;
+    height: 634px;
+    object-fit: cover;
+}
+
+.intro {
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    font-size: 14px;
+    color: #ffffff;
+}
+
+.logo-name {
+    font-size: 55px;
+    margin: 10px 0;
+}
+
+.logo-name .highlight {
+    color: #ff0000;
+}
+
+.hero-title {
+    font-weight: normal;
+    color: white;
+    font-size: 35px;
+    
+}
+
+.title-prompt{
+    color: #ff0000;
+    font-family: "Kode Mono", monospace;
+    font-size: 35px;
+}
+
+.hero-title::after {
+    content: "|";
+    animation: blink 0.5s infinite;
+    margin-left: 5px;
+    color: #ff0000;
+}
+
+@keyframes blink {
+
+    0%,
+    100% {
+        opacity: 1;
+    }
+
+    50% {
+        opacity: 0;
+    }
+}
+
+.description {
+    margin-top: 60px;
+    line-height: 1.6;
+    color: #A9A9A9;
+}
+
+.buttons {
+    margin-top: 60px;
+}
+
+.btn {
+    padding: 12px 24px;
+    text-decoration: none;
+    border: 2px solid #ff0000;
+    margin-right: 15px;
+    transition: 0.3s;
+}
+
+.btn.download {
+    background-color: #ff0000;
+    color: white;
+}
+
+.btn.download:hover{
+    background-color: transparent;
+    color: #ff0000;
+}
+
+.btn.contact {
+    background-color: transparent;
+    color: #ff0000;
+}
+
+.btn.contact:hover {
+    color:white;
+}
+
+.btn:hover {
+    background-color: #ff0000;
+    border-color: #ff0000;
+}
+
+.socials {
+    margin-top: 60px;
+    display: flex;
+    gap: 35px;
+}
+
+.socials a svg {
+    display: block;
+    margin: auto;
+    transition: transform 0.3s ease;
+    width: 30px;
+    height: 30px;
+    color: #A9A9A9;
+    stroke: transparent;
+
+}
+
+.socials a svg:hover {
+    transform: scale(1.2);
+    color: white;
+}
