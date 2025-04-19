@@ -41,17 +41,18 @@ const navbar = document.querySelector(".navbar");
 
 // Listen to hamburger click & run an overlay when clicked
 hamburgerMenu.addEventListener('click', () => {
-    navMenu.classList.toggle('show');
-    overlay.classList.toggle('show');
-    document.body.classList.toggle('no-scroll');
-    navbar.classList.remove("scrolled"); // Disable navbar scrolled design
+  navMenu.classList.toggle('show');
+  overlay.classList.toggle('show');
+  document.body.classList.toggle('no-scroll');
+  navbar.classList.remove("scrolled"); // Disable navbar scrolled design
 });
+
 
 // Close overlay when clicked on
 overlay.addEventListener('click', () => {
   navMenu.classList.remove('show');
   overlay.classList.remove('show');
-  document.body.classList.remove('no-scroll');
+  document.body.classList.remove('no-scroll');// Disable scrolling
 
   // Reset Navbar scrolled design
   if (window.scrollY > 10) {
