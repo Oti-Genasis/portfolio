@@ -1,3 +1,6 @@
+//Animation for the title in section 'Hero'
+
+
 // List of phrases to display
 const texts = [
   "IT Analyst",
@@ -13,6 +16,7 @@ let charIndex = 0;
 let isDeleting = false;
 let typingSpeed = 100;
 let pauseDelay = 2500;
+
 
 function type() {
   const currentText = texts[textIndex];

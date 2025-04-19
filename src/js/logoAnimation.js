@@ -1,3 +1,5 @@
+//Animation for the logo in the navbar
+
 document.addEventListener("DOMContentLoaded", () => {
   const letters = "OSabcdefghijklmnopqrstuvwxyz!@#$%^&*_-:'.,+";
   const finalText = "Otniel.S";

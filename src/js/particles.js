@@ -1,3 +1,7 @@
+//This code basically setup an animated background this interactive particles.
+
+
+
 // Get the canvas element and its 2D rendering context
 const canvas = document.getElementById("particles");
 const ctx = canvas.getContext("2d");
@@ -42,8 +46,8 @@ class Particle {
       this.radius = sizes[Math.floor(Math.random() * sizes.length)];
   
       // Random velocity (dx and dy)
-      this.dx = (Math.random() - 0.5) * 1.5;
-      this.dy = (Math.random() - 0.5) * 1.5;
+      this.dx = (Math.random() - 0.5) * 1.0;
+      this.dy = (Math.random() - 0.5) * 1.0;
     }
   
     draw() {
