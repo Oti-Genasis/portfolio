@@ -3,14 +3,14 @@ import "./logoAnimation";
 import "./typeWriter";
 
 // Change navbar design when scrolled
-if (window.scrollY > 10) {
-  document.querySelector(".navbar").classList.add("scrolled");
+if (window.scrollY > 1) {
+  document.querySelector(".top-navbar").classList.add("scrolled");
 }
 
 //Change navbar design when scrolled
 window.addEventListener("scroll", function () {
-  const navbar = document.querySelector(".navbar");
-  if (window.scrollY > 10) {
+  const navbar = document.querySelector(".top-navbar");
+  if (window.scrollY > 1) {
     navbar.classList.add("scrolled");
   } else {
     navbar.classList.remove("scrolled");
@@ -32,12 +32,13 @@ function revealOnScroll() {
   });
 }
 
-//Hamburger Btn Menu
-const hamburgerMenu = document.getElementById('hamburger-btn');
-const navMenu = document.getElementById('nav-menu');
-const hamburgerIcon = document.getElementById('hamburger-icon');
+//right-navbar-burger-btn
+const hamburgerMenu = document.getElementById('right-navbar-burger-btn');
+const closeBtn = document.getElementById('right-navbar-close-button');
+const navMenu = document.getElementById('right-navbar-buttons');
+const hamburgerIcon = document.getElementById('right-navbar-burger-icon');
 const overlay = document.getElementById('overlay');
-const navbar = document.querySelector(".navbar");
+const navbar = document.querySelector(".top-navbar");
 
 // Listen to hamburger click & run an overlay when clicked
 hamburgerMenu.addEventListener('click', () => {
@@ -45,6 +46,26 @@ hamburgerMenu.addEventListener('click', () => {
   overlay.classList.toggle('show');
   document.body.classList.toggle('no-scroll');
   navbar.classList.remove("scrolled"); // Disable navbar scrolled design
+
+  // Reset Navbar scrolled design
+  if (window.scrollY > 1) {
+    document.querySelector(".top-navbar").classList.add("scrolled");
+  }
+
+});
+
+// Listen to right-navbar-close-button to close 
+closeBtn.addEventListener('click', () => {
+  navMenu.classList.toggle('show');
+  overlay.classList.toggle('show');
+  document.body.classList.toggle('no-scroll');
+  navbar.classList.remove("scrolled"); // Disable navbar scrolled design
+
+  // Reset Navbar scrolled design
+  if (window.scrollY > 1) {
+    document.querySelector(".top-navbar").classList.add("scrolled");
+  }
+
 });
 
 
@@ -52,11 +73,11 @@ hamburgerMenu.addEventListener('click', () => {
 overlay.addEventListener('click', () => {
   navMenu.classList.remove('show');
   overlay.classList.remove('show');
-  document.body.classList.remove('no-scroll');// Disable scrolling
+  document.body.classList.remove('no-scroll');// Disable no-scrolling
 
   // Reset Navbar scrolled design
-  if (window.scrollY > 10) {
-    document.querySelector(".navbar").classList.add("scrolled");
+  if (window.scrollY > 1) {
+    document.querySelector(".top-navbar").classList.add("scrolled");
   }
 
 });

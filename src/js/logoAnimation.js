@@ -3,7 +3,7 @@
 document.addEventListener("DOMContentLoaded", () => {
   const letters = "OSabcdefghijklmnopqrstuvwxyz!@#$%^&*_-:'.,+";
   const finalText = "Otniel.S";
-  const logo = document.querySelector(".logo");
+  const logo = document.querySelector(".top-navbar-logo");
 
   function animateText() {
     let iterations = 0;
