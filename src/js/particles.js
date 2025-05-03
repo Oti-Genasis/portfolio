@@ -121,4 +121,4 @@ function init() {
   drawParticles();
 }
 
-init(); // Start everything
+init();

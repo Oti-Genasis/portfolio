@@ -44,6 +44,12 @@
           <a href="#hire" class="top-navbar-buttons-hire-me-btn top-navbar-buttons-hire-me-btn-mobile"
             data-i18n="hireMe">Hire Me</a>
         </li>
+        <li>
+          <button id="top-navbar-change-lang-button" aria-label="Lang" title="Lang"
+            class="top-navbar-change-lang-button top-navbar-change-lang-button-mobile">
+            EN
+          </button>
+        </li>
       </ul>
 
       <!-- Right-Navbar-Burger-Button -->
@@ -67,9 +73,9 @@
 
       <div class="right-navbar-header-container right-navbar-header-container-mobile">
 
-        <button id="right-navbar-change-lang-button" aria-label="Lang" title="Francais"
+        <button id="right-navbar-change-lang-button" aria-label="Lang" title="Lang"
           class="right-navbar-change-lang-button right-navbar-change-lang-button-mobile">
-          Fr
+          EN
         </button>
 
         <button id="right-navbar-close-button" aria-label="Close"
@@ -91,16 +97,14 @@
 
       <hr class="right-navbar-separation-line right-navbar-separation-line-mobile">
 
-      <ul>
-        <li><a href="#about" data-i18n="about">About</a></li>
-        <li><a href="#skills" data-i18n="skills">Skills</a></li>
-        <li><a href="#projects" data-i18n="projects">Projects</a></li>
-        <li><a href="#resume" data-i18n="resume">Resume</a></li>
-        <li><a href="#contact" data-i18n="contact">Contact</a></li>
-        <li>
-          <a href="#hire" class="hire-me-btn" data-i18n="hireMe">Hire Me</a>
-        </li>
-      </ul>
+      <div class="right-navbar-section-buttons right-navbar-section-buttons-mobile">
+        <button>About</button>
+        <button>Skills</button>
+        <button>Projects</button>
+        <button>Resume</button>
+        <button>Contact</button>
+        <button>Hire Me</button>
+      </div>
 
       <hr class="right-navbar-separation-line right-navbar-separation-line-mobile">
 
@@ -140,25 +144,27 @@
 
 
   <!-- Hero Section -->
-  <section class="hero fade-in">
-    <div class="hero-content">
+  <section class="hero-section hero-section-mobile">
+    <div class="hero-section-content hero-section-content-mobile">
 
-      <div class="hero-photo-mobile">
-        <img src="/images/custom_image2.png" alt="Otniel Sarambe" />
+      <div class="hero-section-photo hero-section-photo-mobile">
+        <img src="/public/images/hero_photo_mobile.png" alt="Otniel Sarambe" />
       </div>
 
-      <div class="hero-text">
-        <p class="intro">Hello, I'm</p>
-        <h1 class="logo-name">
+      <div class="hero-section-text hero-section-text-mobile">
+        <p class="hero-section-text-intro hero-section-text-intro-mobile">Hello, I'm</p>
+
+        <h1 class="hero-section-text-name hero-section-text-name-mobile">
           <span class="highlight">Otniel</span> Sarambe
         </h1>
-        <p class="title-box">
-          >> <span class="hero-title">IT & Network Technician</span>
+
+        <p class="hero-section-text-title2 hero-section-text-title2-mobile">
+          >> <span class="hero-section-text-title2-title hero-section-text-title2-title-mobile">IT & Network Technician</span>
         </p>
 
-        <p class="hero-title-mobile">IT & Network Technician</p>
+        <p class="hero-section-text-title1 hero-section-text-title1-mobile">IT & Network Technician</p>
 
-        <p class="description">
+        <p class="hero-section-text-description hero-section-text-description-mobile">
           Lorem ipsum dolor sit amet, consectetur adipisicing elit. Rem,
           impedit delectus. Ratione voluptatum beatae libero fugiat assumenda
           nulla explicabo. Dignissimos numquam quod tenetur eligendi veritatis
@@ -166,20 +172,13 @@
           amet consectetur adipisicing elit. Perferendis explicabo nostrum
           eius sequi veniam amet nemo, laboriosam molestias quis, similique
           nam cupiditate ad quod quisquam repellendus dicta adipisci
-          doloremque reiciendis. Lorem ipsum dolor sit amet consectetur
-          adipisicing elit. Facere laborum corrupti recusandae rem assumenda
-          ad amet suscipit repellat temporibus atque, accusamus repellendus
-          tenetur numquam cumque cum maiores dolores nemo voluptatibus? Lorem
-          ipsum dolor sit amet consectetur adipisicing elit. Adipisci mollitia
-          distinctio blanditiis, earum dolore ut reiciendis expedita
-          consequuntur corporis aliquid commodi. Laboriosam vero autem
-          reiciendis expedita quod commodi quo consequuntur.
+          doloremque reiciendis.
         </p>
-        <div class="buttons">
-          <a href="#" class="btn download">Download Resume</a>
-          <a href="#contact" class="btn contact">Contact Me</a>
+        <div class="hero-section-text-buttons hero-section-text-buttons-mobile">
+          <a href="#" class="download">Download Resume</a>
+          <a href="#contact" class="contact">Contact Me</a>
         </div>
-        <div class="socials">
+        <div class="hero-section-text-socials hero-section-text-socials-mobile">
           <a href="#" title="Github">
             <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-github"
               viewBox="0 0 16 16">
@@ -202,11 +201,9 @@
             </svg></a>
         </div>
       </div>
-      <div class="hero-photo">
-        <img src="/images/hero_photo1.png" alt="Otniel Sarambe" />
-      </div>
     </div>
   </section>
+
   <!-- Hero Section end-->
 
   <!-- About Section-->

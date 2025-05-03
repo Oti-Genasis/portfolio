@@ -109,8 +109,10 @@ body {
         top: 0px;
         right: 0;
         height: 100vh;
-        width: 300px;
-        transform: translateX(300px);
+        qwidth: 350px;
+        width: 100%;
+        qtransform: translateX(350px);
+        transform: translateX(100%);
         transition: transform 0.3s ease;
         padding-top: 5px;
         z-index: 1000;
@@ -128,28 +130,39 @@ body {
     .right-navbar-header-container-mobile {
         display: flex;
         justify-content: space-between;
-        padding-top: 15px;
+        padding-top: 12px;
         padding-bottom: 25px;
     }
 
     .right-navbar-change-lang-button-mobile {
         background-color: transparent;
-        border: none;
         cursor: pointer;
+        width: 30px;
+        height: 30px;
+        margin-top: -2px;
+        border: 1px dashed #ff0000;
+        transition: 0.3s ease;
+
         color: #ff0000;
-        padding-bottom: 10px;
-        
-        font-size: 22px;
+        font-size: 16px;
         font-style: normal;
         font-family: "Kode Mono", monospace;
         font-weight: bold;
+
     }
+
+    .right-navbar-change-lang-button-mobile:hover {
+        color: white;
+        border-color: white;
+    }
+
+
 
     .right-navbar-close-button-mobile {
         background-color: transparent;
         border: none;
         cursor: pointer;
-        
+
     }
 
     .right-navbar-close-button-icon-mobile {
@@ -169,42 +182,45 @@ body {
     }
 
 
-    .right-navbar-separation-line-mobile{
+    .right-navbar-separation-line-mobile {
         margin-top: 30px;
         margin-bottom: 30px;
-        color: #ff0000;
+        border: none;
+        border-top: 2px dashed #ff0000;
     }
 
-    .right-navbar-buttons-mobile ul {
+
+    .right-navbar-section-buttons-mobile {
         display: grid;
-        grid-template-columns: repeat(2, 1fr);
-        gap: 25px;
-        list-style: none;
-        
+        grid-template-columns: repeat(3, 1fr);
+        place-items: center;
+        gap: 10px;
+
     }
 
-    .right-navbar-buttons-mobile li {       
-        text-align: center;       
-        margin: auto auto;
+    .right-navbar-section-buttons-mobile button {
+        cursor: pointer;
+        border-radius: 0;
+        border-style: groove;
+        border-width: 0px;
+        border-color: #A9A9A9;
         background-color: transparent;
-        font-weight: bold;
-        border: 1px solid #A9A9A9;
-
-        width: 110px;
-        padding: 11px;
-        
-    }
-
-    .right-navbar-buttons-mobile a {
         color: #A9A9A9;
-        text-decoration: none;
-        font-size: 18px;
+        padding: 8px 0px;
+        width: 6rem;
+        transition: 0.3s ease;
+
+        font-size: 16px;
+        font-style: normal;
+        font-family: "Kode Mono", monospace;
+        font-weight: bold;
     }
 
-    .right-navbar-buttons-mobile a:hover {
+    .right-navbar-section-buttons-mobile button:hover {
         color: white;
-        
+        border-color: white;
     }
+
 
     .right-navbar-socials-intro-mobile {
         color: #A9A9A9;
@@ -266,11 +282,147 @@ body {
 
     /* Navbar End */
 
+
     /* Hero Section */
 
+    .hero-section-text-title2-mobile {
+        display: none;
+    }
 
 
 
+    .hero-section-mobile {
+        margin: 0px 48px;
+        background-color: transparent;
+        color: white;
+        font-family: "Kode Mono", monospace;
+    }
+
+    .hero-section-content-mobile {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+
+    .hero-section-photo-mobile {
+        padding-top: 100px;
+    }
+
+    .hero-section-photo-mobile img{
+        max-width: 100%;
+        max-height: 500px;
+        height: auto;
+    }
+
+    .hero-section-text-mobile {
+        text-align: center;
+        padding-top: 20px;
+    }
+
+    .hero-section-text-intro-mobile {
+        text-transform: uppercase;
+        letter-spacing: 2px;
+        font-size: 14px;
+        color: #ffffff;
+    }
+
+    .hero-section-text-name-mobile {
+        font-size: 35px;
+        margin: 9px 0;
+    }
+
+    .hero-section-text-name-mobile .highlight {
+        color: #ff0000;
+    }
+
+    .hero-section-text-title1-mobile {
+        font-weight: normal;
+        color: white;
+        font-size: 20px;
+        overflow: hidden;
+    }
+
+    .hero-section-text-title1-mobile::after {
+        content: "|";
+        animation: blink 0.5s infinite;
+        color: #ff0000;
+    }
+
+    @keyframes blink {
+
+        0%,
+        100% {
+            opacity: 1;
+        }
+
+        50% {
+            opacity: 0;
+        }
+    }
+
+    .hero-section-text-description-mobile {
+        margin-top: 30px;
+        line-height: 1.6;
+        color: #A9A9A9;
+    }
+
+    .hero-section-text-buttons-mobile {
+        display: flex;
+        flex-direction: column;
+        gap: 14px;
+        margin-top: 60px;
+    }
+
+    .hero-section-text-buttons-mobile a {
+        padding: 12px 24px;
+        text-decoration: none;
+        border: 2px solid #ff0000;
+        margin-right: 15px;
+        transition: 0.3s ease;
+    }
+
+    .hero-section-text-buttons-mobile .download {
+        background-color: #ff0000;
+        color: white;
+    }
+
+    .hero-section-text-buttons-mobile .download:hover {
+        background-color: transparent;
+        color: #ff0000;
+    }
+
+    .hero-section-text-buttons-mobile .contact {
+        background-color: transparent;
+        color: #ff0000;
+    }
+
+    .hero-section-text-buttons-mobile .contact:hover {
+        color: white;
+        background-color: #ff0000;
+    }
+
+    .hero-section-text-socials-mobile {
+        margin-top: 40px;
+        display: flex;
+        gap: 35px;
+    }
+
+    .hero-section-text-socials-mobile svg {
+        display: block;
+        margin: auto;
+        transition: transform 0.3s ease;
+        width: 30px;
+        height: 30px;
+        color: #A9A9A9;
+        stroke: transparent;
+    }
+
+    .hero-section-text-socials-mobile svg:hover {
+        transform: scale(1.2);
+        color: white;
+    }
 
 
 
@@ -363,6 +515,28 @@ body {
     .top-navbar-buttons-hire-me-btn:hover {
         background-color: transparent;
         transition: 0.3s ease;
+    }
+
+    .top-navbar-change-lang-button {
+        background-color: transparent;
+        cursor: pointer;
+        width: 25px;
+        height: 25px;
+        margin-top: -2px;
+        margin-left: 10px;
+        border: 1px dashed #ff0000;
+        transition: 0.3s ease;
+
+        color: #ff0000;
+        font-size: 14px;
+        font-style: normal;
+        font-family: "Kode Mono", monospace;
+        font-weight: bold;
+    }
+
+    .top-navbar-change-lang-button:hover {
+        color: white;
+        border-color: white;
     }
 
     .no-scroll {
