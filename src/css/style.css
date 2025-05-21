@@ -33,6 +33,52 @@ body {
     background: rgb(27, 27, 27);
 }
 
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(30px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.fade-in-up {
+    opacity: 0;
+    transform: translateY(30px);
+    transition: opacity 0.6s ease-out, transform 0.6s ease-out;
+}
+
+.fade-in-up.visible {
+    animation: fadeInUp 0.6s ease-out forwards;
+}
+
+
+@keyframes fadeInRight {
+    from {
+        opacity: 0;
+        transform: translateX(-30px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+.fade-in-right {
+    opacity: 0;
+    transform: translateX(-30px);
+    transition: opacity 0.6s ease-out, transform 0.6s ease-out;
+}
+
+.fade-in-right.visible {
+    animation: fadeInRight 0.6s ease-out forwards;
+}
+
+
 
 
 /* ==================== */
@@ -423,8 +469,6 @@ body {
     /* Hero Section End */
 
 
-
-
     /* About Section */
 
     .about-section-mobile {
@@ -459,9 +503,9 @@ body {
         font-size: 26px;
     }
 
-    .about-section-text-title-mobile .highlight{
+    .about-section-text-title-mobile .highlight {
         color: #ff0000;
-        
+
     }
 
     .about-section-text-description-mobile {
@@ -470,16 +514,18 @@ body {
         color: #A9A9A9;
     }
 
-    .about-section-text-list-mobile li{
+    .about-section-text-list-mobile li {
         padding-bottom: 10px;
         color: #A9A9A9;
         list-style: none;
+
     }
 
     .about-section-text-list-mobile svg {
-        width: 12px;
-        height: 12px;
-        padding-top: 1px;
+        width: 11px;
+        height: 13px;
+        padding-top: 2px;
+        transform: rotate(90deg);
     }
 
     .about-section-text-list-title-mobile {
@@ -492,6 +538,79 @@ body {
     /* About Section End*/
 
     /* Skills Section*/
+
+    .skills-section-mobile {
+        background-color: transparent;
+        color: white;
+        font-family: "Kode Mono", monospace;
+
+        padding: 60px 35px;
+    }
+
+    .skills-section-title-mobile {
+        font-size: 26px;
+        
+    }
+
+    .skills-section-title-mobile .highlight {
+        color: #ff0000;
+    }
+
+    .skills-section-content-mobile {
+        display: grid;
+        gap: 1rem;
+        padding: 1rem;
+        grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+
+        justify-content: center;
+        align-items: center;
+
+        padding-top: 30px;
+    }
+
+    .skills-box-frame-mobile {
+        border-radius: 7px;
+        padding: 1.5rem;
+
+        backdrop-filter: blur(10px);
+        box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+        min-height: 400px;
+
+
+        qdisplay: flex;
+        qflex-direction: column;
+        justify-content: center;
+        align-items: center;
+
+        padding-top: 50px;
+        qpadding-bottom: 40px;
+    }
+
+    .skills-box-icon {
+        fill: #ff0000;
+        width: 40px;
+        height: 40px;
+        display: block;
+        margin: 0 auto;
+    }
+
+    .skills-box-title {
+        font-size: 22px;
+        text-align: center;
+
+        padding-top: 30px;
+        padding-bottom: 30px;
+    }
+
+    .skills-box-list li{
+        padding-bottom: 10px;
+        color: #A9A9A9;
+        list-style: none;
+
+        text-align: center;
+    }
+
+
     /* Skills Section End*/
 
 }

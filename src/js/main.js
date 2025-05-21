@@ -2,6 +2,26 @@ import "./particles";
 import "./logoAnimation";
 import "./typeWriter";
 
+// Fade-In-Animation
+const observer = new IntersectionObserver((entries) => {
+  entries.forEach(entry => {
+    if (entry.isIntersecting) {
+      entry.target.classList.add('visible');
+    } else {
+      entry.target.classList.remove('visible'); // Replay Animation
+    }
+  });
+}, { threshold: 0.1 }); // Limit
+
+document.querySelectorAll('.fade-in-up').forEach(section => {
+  observer.observe(section);
+});
+
+document.querySelectorAll('.fade-in-right').forEach(section => {
+  observer.observe(section);
+});
+
+
 // Change navbar design when scrolled
 if (window.scrollY > 1) {
   document.querySelector(".top-navbar").classList.add("scrolled");
