@@ -549,7 +549,7 @@ body {
 
     .skills-section-title-mobile {
         font-size: 26px;
-        
+
     }
 
     .skills-section-title-mobile .highlight {
@@ -576,14 +576,10 @@ body {
         box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
         min-height: 400px;
 
-
-        qdisplay: flex;
-        qflex-direction: column;
         justify-content: center;
         align-items: center;
 
         padding-top: 50px;
-        qpadding-bottom: 40px;
     }
 
     .skills-box-icon {
@@ -602,16 +598,96 @@ body {
         padding-bottom: 30px;
     }
 
-    .skills-box-list li{
+    .skills-box-list li {
         padding-bottom: 10px;
         color: #A9A9A9;
         list-style: none;
+        font-size: 15px;
 
         text-align: center;
     }
 
-
     /* Skills Section End*/
+
+    /* Projects Section */
+    /* Projects Section End */
+
+    /* Resume Section */
+
+    .resume-section-mobile {
+        background-color: transparent;
+        color: white;
+        font-family: "Kode Mono", monospace;
+        padding: 60px 35px;
+    }
+
+    .resume-section-container-mobile {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .resume-section-title-mobile {
+        font-size: 26px;
+    }
+
+    .resume-section-title-mobile .highlight {
+        color: #ff0000;
+    }
+
+    .resume-section-content-mobile .timeline {
+        border-left: 2px solid #ff0000;
+        padding-left: 30px;
+    }
+
+    .resume-section-content-mobile h2 {
+        color: white;
+        font-size: 22px;
+        margin-bottom: 30px;
+        margin-top: 40px;
+    }
+
+    .resume-section-content-item-mobile {
+        position: relative;
+        margin-bottom: 40px;
+    }
+
+    .resume-section-content-item-mobile .dot {
+        position: absolute;
+        left: -9px;
+        top: 10px;
+        width: 12px;
+        height: 12px;
+        background: #ff0000;
+        border: 2px solid white;
+        border-radius: 2px;
+        z-index: 2;
+    }
+
+    .resume-section-content-item-mobile .card {
+        background: transparent;
+        padding: 20px;
+        border-radius: 3px;
+
+        backdrop-filter: blur(10px);
+        box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+    }
+
+    .resume-section-content-item-mobile .card h4 {
+        padding-bottom: 10px;
+    }
+
+    .resume-section-content-item-mobile .card p {
+        color: #A9A9A9;
+    }
+
+    .resume-section-content-item-mobile .date {
+        color: #ff0000;
+        font-weight: bold;
+        font-size: 0.9rem;
+        margin-bottom: 5px;
+    }
+
+    /* Resume Section End*/
 
 }
 
