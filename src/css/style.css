@@ -618,7 +618,7 @@ body {
         background-color: transparent;
         color: white;
         font-family: "Kode Mono", monospace;
-        padding: 60px 35px;
+        padding: 20px 35px;
     }
 
     .resume-section-container-mobile {
@@ -658,7 +658,7 @@ body {
         width: 12px;
         height: 12px;
         background: #ff0000;
-        border: 2px solid white;
+        border: 1px solid white;
         border-radius: 2px;
         z-index: 2;
     }
@@ -667,7 +667,6 @@ body {
         background: transparent;
         padding: 20px;
         border-radius: 3px;
-
         backdrop-filter: blur(10px);
         box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
     }
@@ -687,7 +686,106 @@ body {
         margin-bottom: 5px;
     }
 
-    /* Resume Section End*/
+    /* Resume Section End */
+
+    /* Credentials Section */
+    /* Credentials Section End */
+
+    /* Contact Section */
+    .contact-section-mobile {
+        background-color: transparent;
+        color: white;
+        font-family: "Kode Mono", monospace;
+        padding: 20px 35px;
+    }
+
+    .contact-section-container-mobile {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .contact-section-title-mobile {
+        font-size: 26px;
+        padding-bottom: 15px;
+    }
+
+    .contact-section-title-mobile .highlight {
+        color: #ff0000;
+    }
+
+    .contact-section-intro-mobile {
+        font-size: 16px;
+        margin-bottom: 40px;
+        color: #A9A9A9;
+    }
+
+    .contact-section-form-mobile {
+        display: flex;
+        flex-direction: column;
+        gap: 1.5rem;
+    }
+
+    .contact-section-form-mobile .form-group {
+        display: flex;
+        flex-direction: column;
+        text-align: left;
+    }
+
+    .contact-section-form-mobile .form-group label {
+        margin-bottom: 0.5rem;
+    }
+
+    .contact-section-form-mobile .form-group .highlight {
+        color: #ff0000;
+    }
+
+    .contact-section-form-mobile .form-group input,
+    .form-group textarea {
+        padding: 0.75rem 1rem;
+        border: 1px solid #A9A9A9;
+        border-radius: 4px;
+        font-size: 16px;
+        background-color: transparent;
+        backdrop-filter: blur(10px);
+        color: white;
+        transition: 0.3s ease;
+    }
+
+    .contact-section-form-mobile .form-group input:focus,
+    .form-group textarea:focus {
+        outline: none;
+        box-shadow: 0 0 0 1.5px white;
+    }
+
+    .contact-section-form-mobile .form-group input::placeholder,
+    textarea::placeholder {
+        color: #94a3b8;
+        qfont-family: "Kode Mono", monospace;
+        qfont-size: 14px;
+        qletter-spacing: -1px;
+    }
+
+    .contact-section-form-mobile .submit-button {
+        background-color: #ff0000;
+        color: white;
+        font-family: "Kode Mono", monospace;
+        font-size: 16px;
+        padding: 1rem 2rem;
+        border: 1px solid #ff0000;
+        border-radius: 4px;
+        cursor: pointer;
+        transition: 0.3s ease;
+    }
+
+    .contact-section-form-mobile .submit-button:hover {
+        background-color: transparent;
+        color: #ff0000;
+    }
+
+    /* Contact Section End */
+
+    /* Footer */
+    /* Footer End */
 
 }
 
@@ -766,7 +864,7 @@ body {
         color: #ff0000;
     }
 
-    .top-navbar-buttons-hire-me-btn {
+    .top-navbar-buttons-red-btn {
         background-color: #ff0000;
         padding: 15px 24px;
         border-radius: 1px;
@@ -774,7 +872,7 @@ body {
         border: 2px solid #ff0000;
     }
 
-    .top-navbar-buttons-hire-me-btn:hover {
+    .top-navbar-buttons-red-btn:hover {
         background-color: transparent;
         transition: 0.3s ease;
     }
