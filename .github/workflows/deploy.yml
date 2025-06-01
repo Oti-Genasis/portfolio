@@ -13,12 +13,12 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
-      - name: Set lowercase image name
-        id: image_name
-        run: |
-          REPO_OWNER=$(echo "${{ github.repository_owner }}" | tr '[:upper:]' '[:lower:]')
-          REPO_NAME=$(echo "${{ github.event.repository.name }}" | tr '[:upper:]' '[:lower:]')
-          echo "IMAGE_NAME=ghcr.io/${REPO_OWNER}/${REPO_NAME}:latest" >> $GITHUB_ENV
+      #- name: Set lowercase image name
+      #  id: image_name
+      #  run: |
+      #    REPO_OWNER=$(echo "${{ github.repository_owner }}" | tr '[:upper:]' '[:lower:]')
+      #    REPO_NAME=$(echo "${{ github.event.repository.name }}" | tr '[:upper:]' '[:lower:]')
+      #    echo "IMAGE_NAME=ghcr.io/${REPO_OWNER}/${REPO_NAME}:latest" >> $GITHUB_ENV
 
       - name: Checkout code
         uses: actions/checkout@v3
