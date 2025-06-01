@@ -6,7 +6,7 @@ on:
       - main  # branch
 
 env:
-  IMAGE_NAME: ghcr.io/${{ github.repository_owner }}/portfolio:latest
+  IMAGE_NAME: ghcr.io/${{ github.repository_owner }}/otniel-portfolio:latest
 
 jobs:
   build-and-deploy:
@@ -57,6 +57,6 @@ jobs:
           key: ${{ secrets.VPS_SSH_KEY }}
           script: |
             podman pull $IMAGE_NAME
-            podman stop portfolio || true
-            podman rm portfolio || true
-            podman run -d --name portfolio -p 80:80 $IMAGE_NAME
+            podman stop otniel-portfolio || true
+            podman rm otniel-portfolio || true
+            podman run -d --name otniel-portfolio -p 80:80 $IMAGE_NAME
