@@ -6,7 +6,7 @@ on:
       - main
 
 env:
-  IMAGE_NAME: ghcr.io/Oti-Genasis/otniel-portfolio:latest
+  IMAGE_NAME: ghcr.io/oti-genasis/otniel-portfolio:latest
 
 jobs:
   build-and-deploy:
@@ -36,7 +36,7 @@ jobs:
 
       - name: Build Docker image
         run: |
-          docker build -t $IMAGE_NAME .
+          docker build -t otniel-portfolio:latest .
 
       - name: Push Docker image to GHCR
         run: |
