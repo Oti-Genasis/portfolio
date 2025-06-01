@@ -1,0 +1,55 @@
+name: Deploy my portfolio to VPS with Podman
+
+on:
+  push:
+    branches:
+      - main  # branch
+
+env:
+  IMAGE_NAME: ghcr.io/${{ github.repository_owner }}/otniel_portfolio:latest
+
+jobs:
+  build-and-deploy:
+    runs-on: centos-latest
+
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v3
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v3
+        with:
+          node-version: '18'
+
+      - name: Install dependencies
+        run: npm ci
+
+      - name: Build Vite app
+        run: npm run build
+
+      - name: Login to GitHub Container Registry
+        uses: docker/login-action@v2
+        with:
+          registry: ghcr.io
+          username: ${{ github.actor }}
+          password: ${{ secrets.GITHUB_TOKEN }}
+
+      - name: Build Docker image
+        run: |
+          docker build -t $IMAGE_NAME .
+
+      - name: Push Docker image to GHCR
+        run: |
+          docker push $IMAGE_NAME
+
+      - name: Deploy to VPS via SSH
+        uses: appleboy/ssh-action@v0.1.6
+        with:
+          host: ${{ secrets.VPS_HOST }}
+          username: ${{ secrets.VPS_USER }}
+          key: ${{ secrets.VPS_SSH_KEY }}
+          script: |
+            podman pull $IMAGE_NAME
+            podman stop otniel_portfolio || true
+            podman rm otniel_portfolio || true
+            podman run -d --name otniel_portfolio -p 80:80 $IMAGE_NAME

@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Kode+Mono:wght@600&display=swap" rel="stylesheet" />
+    <link rel="icon" type="image/svg+xml" href="src/assets/icons/favicon2.svg" />
+
+    <title>Merci !</title>
+
+    <style>
+        body {
+            margin: 0;
+            font-family: "Kode Mono", monospace;
+            background-color: rgb(27, 27, 27);
+            color: #fff;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+        }
+
+        .card {
+            background: transparent;
+            padding: 3rem 2.5rem;
+            border-radius: 5px;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+            backdrop-filter: blur(10px);
+            text-align: center;
+            animation: fadeIn 0.6s ease-out forwards;
+        }
+
+        .card svg {
+            width: 60px;
+            height: 60px;
+        }
+
+        h1 {
+            font-size: 2rem;
+            color: white;
+            margin-bottom: 0.5rem;
+        }
+
+        p {
+            color: #a9a9a9;
+            font-size: 1.1rem;
+            margin-bottom: 2rem;
+        }
+
+        a {
+            display: inline-flex;
+            align-items: center;
+            gap: 0.5rem;
+            padding: 0.75rem 1.5rem;
+            background-color: #ff0000;
+            color: white;
+            border: 1px solid #ff0000;
+            border-radius: 3px;
+            text-decoration: none;
+            transition: 0.3s ease;
+        }
+
+        a:hover {
+            background-color: transparent;
+            border-color: #ff0000;
+            color: #ff0000;
+            fill: #ff0000;
+        }
+
+        .card a svg {
+            width: 25px;
+            height: 25px;
+            fill: white;
+        }
+
+        #particles {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            z-index: -1;
+            background: rgb(27, 27, 27);
+        }
+
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+                transform: translateY(20px);
+            }
+
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        @media (max-width: 1024px) {
+            .card {
+                padding: 2rem 1.5rem;
+                margin: 0rem 1rem;
+            }
+
+            h1 {
+                font-size: 1.5rem;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <canvas id="particles"></canvas>
+
+    <div class="card">
+        <svg fill="#ff0000" viewBox="0 0 32 32" xmlns="http://www.w3.org/2000/svg">
+            <path
+                d="M16 0c8.836556 0 16 7.163444 16 16s-7.163444 16-16 16S0 24.836556 0 16 7.163444 0 16 0zm0 2C8.2680135 2 2 8.2680135 2 16s6.2680135 14 14 14 14-6.2680135 14-14S23.7319865 2 16 2zm6.6208153 9.8786797c.3905243.3905242.3905243 1.0236892 0 1.4142135l-7.0710678 7.0710678c-.3626297.3626297-.9344751.3885319-1.3269928.0777064l-.0872208-.0777064-4.24264068-4.2426407c-.39052429-.3905242-.39052429-1.0236892 0-1.4142135.39052428-.3905243 1.02368928-.3905243 1.41421358 0l3.5348268 3.5348268 6.3646681-6.3632539c.3905243-.3905243 1.0236893-.3905243 1.4142136 0z">
+            </path>
+        </svg>
+
+        <h1>Merci pour votre message!</h1>
+        <p>Je reviendrai vers vous dès que possible.</p>
+        <a href="index.html">
+            <svg viewBox="-8.5 0 32 32" xmlns="http://www.w3.org/2000/svg">
+                <path d="M15.281 7.188v17.594l-15.281-8.781z"></path>
+            </svg>
+            Retour au portfolio
+        </a>
+    </div>
+
+    <script src="./src/js/particles.js"></script>
+</body>
+
+</html>

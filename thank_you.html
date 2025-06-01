@@ -8,6 +8,8 @@
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Kode+Mono:wght@600&display=swap" rel="stylesheet" />
+  <link rel="icon" type="image/svg+xml" href="src/assets/icons/favicon2.svg">
+
 
   <title>Thank You !</title>
   <style>
@@ -25,7 +27,7 @@
     .card {
       background: transparent;
       padding: 3rem 2.5rem;
-      border-radius: 1.5rem;
+      border-radius: 5px;
       box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
       backdrop-filter: blur(10px);
       text-align: center;
@@ -50,7 +52,10 @@
     }
 
     a {
-      display: inline-block;
+      display: inline-flex;
+      align-items: center;
+      gap: 0.5rem;
+
       padding: 0.75rem 1.5rem;
       background-color: #ff0000;
       color: white;
@@ -64,6 +69,13 @@
       background-color: transparent;
       border-color: #ff0000;
       color: #ff0000;
+      fill: #ff0000;
+    }
+
+    .card a svg {
+      width: 25px;
+      height: 25px;
+      fill: white;
     }
 
     #particles {
@@ -116,7 +128,15 @@
     </svg>
     <h1>Thank you for your message!</h1>
     <p>I’ll get back to you as soon as possible.</p>
-    <a href="index.html">⬅️ Back to portfolio</a>
+    <a href="index.html">
+      <svg fill="#000000" viewBox="-8.5 0 32 32" version="1.1" xmlns="http://www.w3.org/2000/svg">
+        <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+        <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g>
+        <g id="SVGRepo_iconCarrier">
+          <title>back</title>
+          <path d="M15.281 7.188v17.594l-15.281-8.781z"></path>
+        </g>
+      </svg> Back to portfolio</a>
   </div>
 
   <script src="./src/js/particles.js"></script>
