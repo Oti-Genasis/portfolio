@@ -42,14 +42,14 @@ jobs:
         run: |
           docker push $IMAGE_NAME
 
-      - name: Deploy to VPS via SSH
-        uses: appleboy/ssh-action@v0.1.6
-        with:
-          host: ${{ secrets.VPS_HOST }}
-          username: ${{ secrets.VPS_USER }}
-          key: ${{ secrets.VPS_SSH_KEY }}
-          script: |
-            podman pull $IMAGE_NAME
-            podman stop otniel_portfolio || true
-            podman rm otniel_portfolio || true
-            podman run -d --name otniel_portfolio -p 80:80 $IMAGE_NAME
+      #- name: Deploy to VPS via SSH
+      #  uses: appleboy/ssh-action@v0.1.6
+      #  with:
+      #    host: ${{ secrets.VPS_HOST }}
+      #    username: ${{ secrets.VPS_USER }}
+      #    key: ${{ secrets.VPS_SSH_KEY }}
+      #    script: |
+      #      podman pull $IMAGE_NAME
+      #      podman stop otniel_portfolio || true
+      #      podman rm otniel_portfolio || true
+      #      podman run -d --name otniel_portfolio -p 80:80 $IMAGE_NAME
