@@ -14,9 +14,11 @@ jobs:
 
     steps:
       - name: Set lowercase image name
-        id: vars
+        id: image_name
         run: |
-          echo "IMAGE_NAME=ghcr.io/${REPO_OWNER,,}/${REPO_NAME,,}:latest" >> $GITHUB_ENV
+          REPO_OWNER=$(echo "${{ github.repository_owner }}" | tr '[:upper:]' '[:lower:]')
+          REPO_NAME=$(echo "${{ github.event.repository.name }}" | tr '[:upper:]' '[:lower:]')
+          echo "IMAGE_NAME=ghcr.io/${REPO_OWNER}/${REPO_NAME}:latest" >> $GITHUB_ENV
 
       - name: Checkout code
         uses: actions/checkout@v3
