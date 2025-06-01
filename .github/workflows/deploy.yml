@@ -3,7 +3,7 @@ name: Deploy my portfolio to VPS with Podman
 on:
   push:
     branches:
-      - main  # branch
+      - main
 
 env:
   IMAGE_NAME: ghcr.io/oti-genasis/otniel-portfolio:latest
@@ -13,13 +13,6 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
-      #- name: Set lowercase image name
-      #  id: image_name
-      #  run: |
-      #    REPO_OWNER=$(echo "${{ github.repository_owner }}" | tr '[:upper:]' '[:lower:]')
-      #    REPO_NAME=$(echo "${{ github.event.repository.name }}" | tr '[:upper:]' '[:lower:]')
-      #    echo "IMAGE_NAME=ghcr.io/${REPO_OWNER}/${REPO_NAME}:latest" >> $GITHUB_ENV
-
       - name: Checkout code
         uses: actions/checkout@v3
 
@@ -59,4 +52,7 @@ jobs:
             podman pull $IMAGE_NAME
             podman stop otniel-portfolio || true
             podman rm otniel-portfolio || true
-            podman run -d --name otniel-portfolio -p 80:80 $IMAGE_NAME
+            podman run -d --name otniel-portfolio \
+              -p 80:80 \
+              --restart=unless-stopped \
+              $IMAGE_NAME
