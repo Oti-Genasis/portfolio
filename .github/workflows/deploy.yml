@@ -6,7 +6,7 @@ on:
       - main  # branch
 
 env:
-  IMAGE_NAME: ghcr.io/${{ github.repository_owner }}/otniel-portfolio:latest
+  IMAGE_NAME: ghcr.io/oti-genasis/otniel-portfolio:latest
 
 jobs:
   build-and-deploy:
