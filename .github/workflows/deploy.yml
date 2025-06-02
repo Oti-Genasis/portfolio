@@ -32,15 +32,15 @@ jobs:
         with:
           registry: ghcr.io
           username: ${{ github.actor }}
-          password: ${{ secrets.GITHUB_TOKEN }}
+          password: ${{ secrets.PAT_TOKEN }}
 
       - name: Build Docker image
         run: |
-          docker build -t $IMAGE_NAME .
+          docker build -t ghcr.io/oti-genasis/otniel-portfolio:latest
 
       - name: Push Docker image to GHCR
         run: |
-          docker push $IMAGE_NAME
+          docker push ghcr.io/oti-genasis/otniel-portfolio:latest
 
       - name: Deploy to VPS via SSH
         uses: appleboy/ssh-action@v0.1.6
