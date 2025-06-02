@@ -1,6 +1,6 @@
-import "./particles";
-import "./logoAnimation";
-import "./typeWriter";
+import "./particles.js";
+import "./logoAnimation.js";
+import "./typeWriter.js";
 
 // Fade-In-Animation
 const observer = new IntersectionObserver((entries) => {
