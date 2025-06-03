@@ -760,9 +760,6 @@ body {
     .contact-section-form-mobile .form-group input::placeholder,
     textarea::placeholder {
         color: #94a3b8;
-        qfont-family: "Kode Mono", monospace;
-        qfont-size: 14px;
-        qletter-spacing: -1px;
     }
 
     .contact-section-form-mobile .submit-button {
@@ -785,6 +782,26 @@ body {
     /* Contact Section End */
 
     /* Footer */
+    .footer-mobile {
+        background-color: transparent;
+        color: white;
+        padding: 20px 0;
+        text-align: center;
+        font-family: "Kode Mono", monospace;
+        font-size: 16px;
+        backdrop-filter: blur(10px);
+    }
+
+    .footer-content-mobile {
+        max-width: 1000px;
+        margin: 0 auto;
+        padding: 0 20px;
+        line-height: 30px;
+    }
+
+    .footer-content-mobile .highlight{
+        color: #ff0000;
+    }
     /* Footer End */
 
 }

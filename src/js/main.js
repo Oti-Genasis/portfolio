@@ -104,3 +104,7 @@ overlay.addEventListener('click', () => {
 
 window.addEventListener('scroll', revealOnScroll);
 window.addEventListener('load', revealOnScroll);
+
+
+// get year for footer
+document.getElementById("year").textContent = new Date().getFullYear();
