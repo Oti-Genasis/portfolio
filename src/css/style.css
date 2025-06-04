@@ -553,7 +553,6 @@ body {
 
     .skills-section-title-mobile {
         font-size: 26px;
-
     }
 
     .skills-section-title-mobile .highlight {
@@ -565,10 +564,8 @@ body {
         gap: 1rem;
         padding: 1rem;
         grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-
         justify-content: center;
         align-items: center;
-
         padding-top: 30px;
     }
 
@@ -693,6 +690,88 @@ body {
     /* Resume Section End */
 
     /* Credentials Section */
+
+    .credentials-section-mobile {
+        background-color: transparent;
+        color: white;
+        font-family: "Kode Mono", monospace;
+        padding: 20px 35px;
+    }
+
+    .credentials-section-container-mobile {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .credentials-section-title-mobile {
+        font-size: 26px;
+    }
+
+    .credentials-section-title-mobile .highlight {
+        color: #ff0000;
+    }
+
+    .credentials-section-intro-mobile {
+        padding-top: 15px;
+        padding-bottom: 15px;
+        color: #A9A9A9;
+    }
+
+    .credentials-section-content-mobile {
+        display: grid;
+        gap: 1rem;
+        padding: 1rem;
+        grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+        justify-content: center;
+        align-items: center;
+    }
+
+    .credentials-section-item-mobile {
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        align-items: center;
+        background: transparent;
+        min-height: 380px;
+    
+        padding: 10px;
+        border-radius: 3px;
+        backdrop-filter: blur(10px);
+        box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+        margin-bottom: 15px;
+    }
+
+    .credentials-section-item-mobile .date {
+        color: #ff0000;
+        font-weight: bold;
+        font-size: 0.9rem;
+        margin-bottom: 5px;
+    }
+
+    .credentials-section-item-mobile h3 {
+        padding-top: 15px;
+        padding-bottom: 5px;
+        font-size: 15px;
+        color: #A9A9A9;
+    }
+
+    .credentials-section-item-mobile img {
+        width: 100%;
+        max-width: 400px;
+        height: auto;
+        border-radius: 8px;
+        box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+        object-fit: cover;
+        transition: transform 0.3s ease;
+        border: 3px solid #ff0000;
+    }
+
+    .credentials-section-item-mobile img:hover {
+        transform: scale(1.05);
+        cursor: pointer;
+    }
+
+
     /* Credentials Section End */
 
     /* Contact Section */
@@ -803,9 +882,10 @@ body {
         line-height: 30px;
     }
 
-    .footer-content-mobile .highlight{
+    .footer-content-mobile .highlight {
         color: #ff0000;
     }
+
     /* Footer End */
 
 }
