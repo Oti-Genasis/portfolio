@@ -108,3 +108,13 @@ window.addEventListener('load', revealOnScroll);
 
 // get year for footer
 document.getElementById("year").textContent = new Date().getFullYear();
+
+// Slider Animation
+let index = 0;
+const slides = document.querySelector('.projects-section-slider-mobile .slides');
+const total = slides.children.length;
+
+setInterval(() => {
+  index = (index + 1) % total;
+  slides.style.transform = `translateX(-${index * 100}%)`;
+}, 3000);

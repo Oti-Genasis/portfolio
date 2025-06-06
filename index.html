@@ -46,7 +46,7 @@
         <li>
           <button id="top-navbar-change-lang-button" aria-label="Lang" title="Lang"
             class="top-navbar-change-lang-button top-navbar-change-lang-button-mobile">
-            EN
+            FR
           </button>
         </li>
       </ul>
@@ -582,6 +582,129 @@
 
   <!-- Projects Section -->
 
+  <section class="projects-section project-section-mobile">
+
+    <div class="projects-section-container projects-section-container-mobile">
+
+      <h1 class="projects-section-title projects-section-title-mobile fade-in-up">
+        <span class="highlight">My</span> Latest Projects
+      </h1>
+
+      <p class="projects-section-intro projects-section-intro-mobile">
+        A collection of self-driven projects demonstrating my technical range — from backend setups and secure
+        networking to frontend development and CI/CD automation.
+      </p>
+
+      <div class="projects-section-content projects-section-content-mobile">
+
+        <!-- Item 1 -->
+        <div class="projects-section-item projects-section-item-mobile">
+
+          <div class="projects-section-slider projects-section-slider-mobile">
+            <div class="slides">
+              <img src="public/images/project_wg/wireguard.png" alt="wireguard_logo" />
+              <img src="public/images/project_wg/ipad_screenshot_wg.png" alt="ipad_screenshot" />
+              <img src="public/images/project_wg/android_screenshot_wg.png" alt="android_screenshot" />
+            </div>
+          </div>
+
+          <h2 class="projects-title">Personal VPN Deployment with WireGuard</h2>
+
+          <div class="projects-description">
+            <h3 class="title">Description:</h3>
+            <p class="description">Set up and deployed a personal WireGuard VPN on a Linode VPS to securely route
+              internet traffic and access private services remotely.</p>
+          </div>
+
+          <div class="projects-details">
+            <h3 class="title">Details:</h3>
+            <ul class="details">
+              <li>✓ Installed and configured WireGuard on a cloud VPS (RedHat Linux)</li>
+              <li>✓ Hardened the server (firewall rules, SSH restriction, change default ports..)</li>
+              <li>✓ Generated keys for multiple devices (laptop, phone, etc.)</li>
+              <li>✓ Enabled secure access to self-hosted services without exposing them to the public internet</li>
+              <li>✓ Maintained connectivity across devices and platforms (IOS, Android, Linux.)</li>
+            </ul>
+          </div>
+
+          <div class="projects-conclusion">
+            <h3 class="title">Results:</h3>
+            <p class="conclusion">I can now securely browse from any location and access my VPS-hosted tools as if I
+              were on the local network — with full encryption, zero port exposure, and multi-device support.</p>
+          </div>
+
+          <div class="projects-stack">
+            <h3 class="title">Used stack:</h3>
+            <ul class="stack">
+              <li>WireGuard</li>
+              <li>Linux</li>
+              <li>Firewalld</li>
+              <li>Linode VPS</li>
+              <li>Podman</li>
+            </ul>
+          </div>
+
+        </div>
+
+
+        <!-- Item 2 -->
+        <div class="projects-section-item projects-section-item-mobile">
+
+          <div class="projects-section-slider projects-section-slider-mobile">
+            <div class="slides">
+              <img src="img1.jpg" alt="Slide 1" />
+              <img src="img2.jpg" alt="Slide 2" />
+              <img src="img3.jpg" alt="Slide 3" />
+            </div>
+          </div>
+
+          <h2 class="projects-title">Personal Portfolio Website (From Scratch)</h2>
+
+          <div class="projects-description">
+            <h3 class="title">Description:</h3>
+            <p class="description">To showcase my skills, projects, and certifications as an IT professional, I designed
+              and developed a fully custom portfolio website — without using any frameworks or templates.</p>
+          </div>
+
+          <div class="projects-details">
+            <h3 class="title">Details:</h3>
+            <ul class="details">
+              <li>✓ Coded everything from scratch using pure HTML, CSS, and JavaScript</li>
+              <li>✓ Designed the entire UI/UX myself, focusing on clarity, responsiveness, and accessibility</li>
+              <li>✓ Organized the project structure with scalability and maintainability in mind</li>
+              <li>✓ Implemented animations and section transitions for a smooth user experience</li>
+              <li>✓ Deployed the site using GitHub Pages, and set up a <span class="highlight">CI/CD pipeline</span>
+                with <span class="highlight">GitHub Actions</span> to auto-deploy on every push to main</li>
+            </ul>
+          </div>
+
+          <div class="projects-conclusion">
+            <h3 class="title">Results:</h3>
+            <p class="conclusion">A clean, responsive, and lightweight portfolio that I fully control — demonstrating
+              both frontend coding and DevOps deployment skills.</p>
+          </div>
+
+          <div class="projects-stack">
+            <h3 class="title">Used stack:</h3>
+            <ul class="stack">
+              <li>HTML</li>
+              <li>CSS</li>
+              <li>JavaScript</li>
+              <li>GitHub Pages</li>
+              <li>GitHub Actions (CI/CD)</li>
+            </ul>
+          </div>
+
+        </div>
+
+
+
+      </div>
+
+    </div>
+
+  </section>
+
   <!-- Projects Section end -->
 
 
@@ -723,18 +846,26 @@
 
       <div class="credentials-section-content credentials-section-content-mobile">
 
-        <!-- Item 1 -->
-        <div class="credentials-section-item credentials-section-item-mobile">
-          <img src="public/docs/ccna.jpg" alt="My profile photo" />
-          <h3>Cisco Certified Network Associate</h3>
-          <span class="date">Oct 2024 - Oct 2027</span>
-        </div>
-
         <!-- Item 2 -->
         <div class="credentials-section-item credentials-section-item-mobile">
-          <img src="public/docs/diploma.jpg" alt="My profile photo" />
-          <h3>Associate’s degree, Computer Systems Technology</h3>
-          <span class="date">Apr 2024</span>
+          <img src="public/docs/ccna.jpg" alt="CCNA Cert" />
+
+          <div class="text">
+            <h3>Cisco Certified Network Associate</h3>
+            <span class="date">Oct 2024 - Oct 2027</span>
+          </div>
+
+        </div>
+
+        <!-- Item 1 -->
+        <div class="credentials-section-item credentials-section-item-mobile">
+          <img src="public/docs/diploma.jpg" alt="IT Diploma" />
+
+          <div class="text">
+            <h3>Associate’s degree, Computer Systems Technology</h3>
+            <span class="date">Apr 2024</span>
+          </div>
+
         </div>
 
       </div>

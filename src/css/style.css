@@ -611,6 +611,101 @@ body {
     /* Skills Section End*/
 
     /* Projects Section */
+
+    .project-section-mobile {
+        background-color: transparent;
+        color: white;
+        font-family: "Kode Mono", monospace;
+        padding: 30px 35px;
+    }
+
+    .projects-section-container-mobile {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .projects-section-slider-mobile {
+        width: auto;
+        max-width: 600px;
+        overflow: hidden;
+        border-radius: 5px;
+        position: relative;
+        margin: auto;
+    }
+
+    .projects-section-slider-mobile .slides {
+        display: flex;
+        transition: transform 0.5s ease;
+        width: auto;
+    }
+
+    .projects-section-slider-mobile img {
+        qdisplay: block;
+        width: fit-content;
+        height: auto;
+        max-width: 600px;
+        max-height: 300px;
+        qheight: auto;
+        qborder-radius: 2px;
+        qbox-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+        qobject-fit: cover;
+        transition: transform 0.3s ease;
+        qflex: 0 0 100%;
+        qborder: 3px solid #ff0000;
+    }
+
+    .projects-section-title-mobile {
+        font-size: 26px;
+    }
+
+    .projects-section-title-mobile .highlight {
+        color: #ff0000;
+    }
+
+    .projects-section-intro-mobile {
+        padding-top: 15px;
+        padding-bottom: 15px;
+        color: #A9A9A9;
+    }
+
+    .projects-section-content-mobile {
+        qgap: 1rem;
+        qpadding: 1rem;
+        qjustify-content: center;
+        qalign-items: center;
+        margin-top: 40px;
+    }
+
+    .projects-section-item-mobile h3 {
+        font-size: 18px;
+        padding-top: 10px;
+        padding-bottom: 10px;
+    }
+
+    .projects-section-item-mobile .description {
+        color: #A9A9A9;
+    }
+
+    .projects-section-item-mobile .details {
+        color: #A9A9A9;
+    }
+
+    .projects-section-item-mobile .conclusion {
+        color: #A9A9A9;
+    }
+
+    .projects-section-item-mobile .stack {
+        color: #A9A9A9;
+    }
+
+
+    .projects-title {
+        color: white;
+        font-size: 21px;
+        margin-bottom: 20px;
+        margin-top: 30px;
+    }
+
     /* Projects Section End */
 
     /* Resume Section */
@@ -718,12 +813,10 @@ body {
     }
 
     .credentials-section-content-mobile {
-        display: grid;
-        gap: 1rem;
+        display: flex;
+        flex-direction: column;
+        gap: 3rem;
         padding: 1rem;
-        grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-        justify-content: center;
-        align-items: center;
     }
 
     .credentials-section-item-mobile {
@@ -731,14 +824,16 @@ body {
         flex-direction: column;
         text-align: center;
         align-items: center;
+    }
+
+    .credentials-section-item-mobile .text {
         background: transparent;
-        min-height: 380px;
-    
         padding: 10px;
-        border-radius: 3px;
-        backdrop-filter: blur(10px);
         box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
-        margin-bottom: 15px;
+        backdrop-filter: blur(10px);
+        margin-top: 8px;
+        border-radius: 8px;
+        max-width: 600px;
     }
 
     .credentials-section-item-mobile .date {
@@ -749,7 +844,6 @@ body {
     }
 
     .credentials-section-item-mobile h3 {
-        padding-top: 15px;
         padding-bottom: 5px;
         font-size: 15px;
         color: #A9A9A9;
@@ -757,7 +851,7 @@ body {
 
     .credentials-section-item-mobile img {
         width: 100%;
-        max-width: 400px;
+        max-width: 600px;
         height: auto;
         border-radius: 8px;
         box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
