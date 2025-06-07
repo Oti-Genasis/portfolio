@@ -324,7 +324,7 @@ body {
         pointer-events: all;
     }
 
-    .no-scrolls {
+    .no-scroll {
         overflow: hidden;
     }
 
