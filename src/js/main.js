@@ -103,18 +103,18 @@ navMenuBtns.forEach(button => {
     //document.body.classList.toggle('no-scroll');
     navbar.classList.remove("scrolled"); // Disable navbar scrolled design
 
-    const target = button.getAttribute('data-target');
-    const targetSection = document.querySelector(target);
+    //const target = button.getAttribute('data-target');
+    //const targetSection = document.querySelector(target);
 
     // Reset Navbar scrolled design
-    if (window.scrollY > 1) {
-      document.querySelector(".top-navbar").classList.add("scrolled");
-    }
+    //if (window.scrollY > 1) {
+    //  document.querySelector(".top-navbar").classList.add("scrolled");
+   // }
 
-    if (targetSection) {
-      targetSection.scrollIntoView({ behavior: "smooth", block: "start" });
-    }
-    console.log("Bouton cliqué : ", targetSection);
+    //if (targetSection) {
+    //  targetSection.scrollIntoView({ behavior: "smooth", block: "start" });
+   // }
+   // console.log("Bouton cliqué : ", targetSection);
   });
 });
 
