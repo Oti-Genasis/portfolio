@@ -72,7 +72,7 @@ portfolio/
 
 ## 🌐 Live Demo
 
-[https://otnielsarambe.com](https://otnielsarambe.com)
+[Deployed Online](https://otnielsarambe.com)
 
 ---
 
