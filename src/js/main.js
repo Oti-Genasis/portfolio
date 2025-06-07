@@ -3,7 +3,7 @@ import "./logoAnimation.js";
 import "./typeWriter.js";
 
 document.addEventListener('DOMContentLoaded', () => {
-  console.log("DOM fully loaded and parsed");
+  
   // Load images faster
   document.querySelectorAll("img").forEach(img => {
     img.setAttribute("loading", "eager");
