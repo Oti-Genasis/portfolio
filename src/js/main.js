@@ -2,6 +2,11 @@ import "./particles.js";
 import "./logoAnimation.js";
 import "./typeWriter.js";
 
+// Load images faster
+document.querySelectorAll("img").forEach(img => {
+  img.setAttribute("loading", "eager");
+});
+
 // Fade-In-Animation
 const observer = new IntersectionObserver((entries) => {
   entries.forEach(entry => {
@@ -109,7 +114,7 @@ navMenuBtns.forEach(button => {
     if (targetSection) {
       targetSection.scrollIntoView({ behavior: "smooth", block: "start" });
     }
-    console.log("Bouton cliqué : ", targetId);
+    console.log("Bouton cliqué : ", target);
   });
 });
 
@@ -148,4 +153,6 @@ sliders.forEach(slider => {
     track.style.transform = `translateX(-${index * 100}%)`;
   }, 4000);
 });
+
+
 
