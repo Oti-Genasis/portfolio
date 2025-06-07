@@ -64,7 +64,7 @@ const navMenu = document.getElementById('right-navbar-buttons');
 const hamburgerIcon = document.getElementById('right-navbar-burger-icon');
 const overlay = document.getElementById('overlay');
 const navbar = document.querySelector(".top-navbar");
-const navMenuBtns = document.querySelectorAll('.right-navbar-section-buttons [data-target]');
+const navMenuBtns = document.querySelectorAll('.right-navbar-section-buttons button');
 
 // Listen to hamburger click & run an overlay when clicked
 hamburgerMenu.addEventListener('click', () => {
@@ -114,7 +114,7 @@ navMenuBtns.forEach(button => {
     if (targetSection) {
       targetSection.scrollIntoView({ behavior: "smooth", block: "start" });
     }
-    console.log("Bouton cliqué : ", target);
+    console.log("Bouton cliqué : ", targetSection);
   });
 });
 
