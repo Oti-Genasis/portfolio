@@ -100,7 +100,7 @@ navMenuBtns.forEach(button => {
   button.addEventListener('click', (e) => {
     navMenu.classList.toggle('show');
     overlay.classList.toggle('show');
-    document.body.classList.remove('no-scroll'); // Retire la classe AVANT le scroll
+    document.body.classList.remove('no-scroll');
     navbar.classList.remove("scrolled");
 
     const target = button.getAttribute('data-target');
@@ -108,10 +108,21 @@ navMenuBtns.forEach(button => {
 
     if (targetSection) {
       e.preventDefault();
-      // Utilise un délai pour laisser le temps au DOM de se mettre à jour
       setTimeout(() => {
+        // Premier essai avec scrollIntoView
         targetSection.scrollIntoView({ behavior: "smooth", block: "start" });
-      }, 50); // 50ms suffit, tu peux ajuster si besoin
+
+        // Secours : scroll direct si rien ne se passe après 400ms
+        setTimeout(() => {
+          const rect = targetSection.getBoundingClientRect();
+          if (Math.abs(rect.top) > 10) {
+            window.scrollTo({
+              top: window.scrollY + rect.top - 10,
+              behavior: "smooth"
+            });
+          }
+        }, 400);
+      }, 200); // Délai augmenté à 200ms
     }
   });
 });
