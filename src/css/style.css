@@ -94,9 +94,8 @@ body {
     backdrop-filter: blur(1px);
     box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
     border:none;
-    qborder: 1px solid #ff0000;
-    width: 40px;
-    height: 40px;
+    width: 45px;
+    height: 45px;
     font-size: 2rem;
     cursor: pointer;
     box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
@@ -105,13 +104,12 @@ body {
     transition: opacity 0.3s;
 
     display: flex;
-    qalign-items: center;
     justify-content: center;
 }
 
 .back-to-top svg {
-    width: 35px;
-    height: 35px;
+    width: 43px;
+    height: 43px;
 }
 
 .back-to-top.show {
