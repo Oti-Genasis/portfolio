@@ -83,6 +83,29 @@ body {
     animation: fadeInRight 0.6s ease-out forwards;
 }
 
+#back-to-top {
+  position: fixed;
+  bottom: 32px;
+  right: 32px;
+  z-index: 999;
+  background: #222;
+  color: #fff;
+  border: none;
+  border-radius: 50%;
+  width: 48px;
+  height: 48px;
+  font-size: 2rem;
+  cursor: pointer;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.2);
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity 0.3s;
+}
+#back-to-top.show {
+  opacity: 1;
+  pointer-events: auto;
+}
+
 
 
 /* ==================== */
