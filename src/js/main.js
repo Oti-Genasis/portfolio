@@ -59,7 +59,7 @@ const navMenu = document.getElementById('right-navbar-buttons');
 const hamburgerIcon = document.getElementById('right-navbar-burger-icon');
 const overlay = document.getElementById('overlay');
 const navbar = document.querySelector(".top-navbar");
-const navMenuBtns = document.querySelectorAll('.right-navbar-section-buttons button');
+const navMenuBtns = document.querySelectorAll('.right-navbar-section-buttons [data-target]');
 
 // Listen to hamburger click & run an overlay when clicked
 hamburgerMenu.addEventListener('click', () => {
