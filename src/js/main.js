@@ -3,7 +3,7 @@ import "./logoAnimation.js";
 import "./typeWriter.js";
 
 document.addEventListener('DOMContentLoaded', () => {
-
+  console.log("DOM fully loaded and parsed");
   // Load images faster
   document.querySelectorAll("img").forEach(img => {
     img.setAttribute("loading", "eager");
@@ -155,14 +155,24 @@ document.addEventListener('DOMContentLoaded', () => {
 
   sliders.forEach(slider => {
     const track = slider.querySelector('.projects-section-slider-mobile .slider');
+    if (!track) {
+      console.warn('Slider track not found in:', slider);
+      return; // Skip this slider if track is missing
+    }
+
     const images = track.querySelectorAll('.projects-section-slider-mobile img');
     let index = 0;
 
-    setInterval(() => {
-      index = (index + 1) % images.length;
-      track.style.transform = `translateX(-${index * 100}%)`;
-    }, 4000);
+    if (images && images.length > 0) {
+      setInterval(() => {
+        index = (index + 1) % images.length;
+        track.style.transform = `translateX(-${index * 100}%)`;
+      }, 4000);
+    } else {
+      console.warn('No images found for slider:', slider);
+    }
   });
+
 
   // Back to top button
   const backToTopBtn = document.getElementById('back-to-top');
@@ -179,8 +189,6 @@ document.addEventListener('DOMContentLoaded', () => {
   backToTopBtn.addEventListener('click', () => {
     window.scrollTo({ top: 0, behavior: 'smooth' });
   });
-
-
 
 });
 
