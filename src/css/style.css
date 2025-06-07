@@ -80,7 +80,6 @@ body {
 
 
 
-
 /* ==================== */
 /* === Mobile/Tablet === */
 /* ==================== */
@@ -625,33 +624,30 @@ body {
     }
 
     .projects-section-slider-mobile {
-        width: auto;
-        max-width: 600px;
-        overflow: hidden;
-        border-radius: 5px;
-        position: relative;
+        width: 100%;
+        max-width: 700px;
         margin: auto;
+        overflow: hidden;
+        border-radius: 10px;
+        backdrop-filter: blur(10px);
+        box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+        position: relative;
+        height: 350px;
     }
 
-    .projects-section-slider-mobile .slides {
+    .projects-section-slider-mobile .slider {
         display: flex;
-        transition: transform 0.5s ease;
-        width: auto;
+        transition: transform 0.5s ease-in-out;
+        height: 100%;
     }
+
 
     .projects-section-slider-mobile img {
-        qdisplay: block;
-        width: fit-content;
-        height: auto;
-        max-width: 600px;
-        max-height: 300px;
-        qheight: auto;
-        qborder-radius: 2px;
-        qbox-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
-        qobject-fit: cover;
-        transition: transform 0.3s ease;
-        qflex: 0 0 100%;
-        qborder: 3px solid #ff0000;
+        width: 100%;
+        height: 100%;
+        object-fit: contain;
+        flex-shrink: 0;
+        border-radius: 10px;
     }
 
     .projects-section-title-mobile {
@@ -669,11 +665,11 @@ body {
     }
 
     .projects-section-content-mobile {
-        qgap: 1rem;
-        qpadding: 1rem;
-        qjustify-content: center;
-        qalign-items: center;
         margin-top: 40px;
+    }
+
+    .projects-section-item-mobile {
+        margin-bottom: 60px;
     }
 
     .projects-section-item-mobile h3 {
@@ -704,6 +700,23 @@ body {
         font-size: 21px;
         margin-bottom: 20px;
         margin-top: 30px;
+    }
+
+    .projects-section-item-mobile li {
+        list-style: none;
+    }
+
+    .projects-section-item-mobile .stack {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 1px;
+    }
+
+    .projects-section-item-mobile .stack li {
+        text-align: center;
+        border-radius: 6px;
+        backdrop-filter: blur(10px);
+        box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
     }
 
     /* Projects Section End */
@@ -981,6 +994,11 @@ body {
     }
 
     /* Footer End */
+
+
+
+
+
 
 }
 
