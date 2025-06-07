@@ -107,9 +107,9 @@ navMenuBtns.forEach(button => {
     }
 
     if (targetSection) {
-      targetSection.scrollIntoView({ behavior: 'smooth' });
+      targetSection.scrollIntoView({ behavior: "smooth", block: "start" });
     }
-
+    console.log("Bouton cliqué : ", targetId);
   });
 });
 
