@@ -97,24 +97,22 @@ closeBtn.addEventListener('click', () => {
 //Listen to right-navbar-menu-buttons to close
 
 navMenuBtns.forEach(button => {
-  button.addEventListener('click', () => {
+  button.addEventListener('click', (e) => {
     navMenu.classList.toggle('show');
     overlay.classList.toggle('show');
-    //document.body.classList.toggle('no-scroll');
-    navbar.classList.remove("scrolled"); // Disable navbar scrolled design
+    document.body.classList.remove('no-scroll'); // Retire la classe AVANT le scroll
+    navbar.classList.remove("scrolled");
 
     const target = button.getAttribute('data-target');
     const targetSection = document.querySelector(target);
 
-    // Reset Navbar scrolled design
-    if (window.scrollY > 1) {
-      document.querySelector(".top-navbar").classList.add("scrolled");
-    }
-
     if (targetSection) {
-      targetSection.scrollIntoView({ behavior: "smooth", block: "start" });
+      e.preventDefault();
+      // Utilise un délai pour laisser le temps au DOM de se mettre à jour
+      setTimeout(() => {
+        targetSection.scrollIntoView({ behavior: "smooth", block: "start" });
+      }, 50); // 50ms suffit, tu peux ajuster si besoin
     }
-   // console.log("Bouton cliqué : ", targetSection);
   });
 });
 
