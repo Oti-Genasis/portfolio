@@ -100,7 +100,7 @@ navMenuBtns.forEach(button => {
   button.addEventListener('click', () => {
     navMenu.classList.toggle('show');
     overlay.classList.toggle('show');
-    document.body.classList.toggle('no-scroll');
+    //document.body.classList.toggle('no-scroll');
     navbar.classList.remove("scrolled"); // Disable navbar scrolled design
 
     const target = button.getAttribute('data-target');
