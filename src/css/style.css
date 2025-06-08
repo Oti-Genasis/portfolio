@@ -1414,6 +1414,7 @@ body {
         justify-content: center;
         align-items: center;
         padding-top: 30px;
+        max-width: 1440px;
     }
 
     .skills-box-frame {
@@ -1507,6 +1508,7 @@ body {
     }
     .projects-section-content {
         margin-top: 40px;
+        max-width: 1440px;
     }
     .projects-section-item {
         margin-bottom: 60px;
