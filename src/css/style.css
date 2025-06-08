@@ -1393,7 +1393,8 @@ body {
         font-family: "Kode Mono", monospace;
 
         max-width: 1440px;
-        margin: 0 auto;
+        qmargin: 0 auto;
+        margin: 40px 48px;
     }
 
     .skills-section-title {
