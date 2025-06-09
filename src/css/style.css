@@ -1321,6 +1321,8 @@ body {
         background-color: transparent;
         color: white;
         font-family: "Kode Mono", monospace;
+
+
     }
 
     .about-section-content {
@@ -1391,10 +1393,13 @@ body {
         background-color: transparent;
         color: white;
         font-family: "Kode Mono", monospace;
+        padding-left: 48px;
+        padding-right: 48px;
+    }
 
+    .skills-section-container {
+        margin: 0 auto;
         max-width: 1440px;
-        qmargin: 0 auto;
-        margin: 40px 48px;
     }
 
     .skills-section-title {
@@ -1415,20 +1420,16 @@ body {
         justify-content: center;
         align-items: center;
         padding-top: 30px;
-        max-width: 1440px;
     }
 
     .skills-box-frame {
         border-radius: 7px;
         padding: 1.5rem;
-
         backdrop-filter: blur(10px);
         box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
         min-height: 450px;
-
         justify-content: center;
         align-items: center;
-
         padding-top: 50px;
     }
 
@@ -1443,7 +1444,6 @@ body {
     .skills-box-title {
         font-size: 22px;
         text-align: center;
-
         padding-top: 30px;
         padding-bottom: 30px;
     }
@@ -1465,13 +1465,17 @@ body {
         background-color: transparent;
         color: white;
         font-family: "Kode Mono", monospace;
-        max-width: 1440px;
-        margin: 0 auto;
-    }
-    .projects-section-container {
         display: flex;
         flex-direction: column;
+        padding-left: 48px;
+        padding-right: 48px;
     }
+
+    .projects-section-container {
+        margin: 0 auto;
+        max-width: 1440px;
+    }
+
     .projects-section-slider {
         width: 100%;
         max-width: 1000px;
@@ -1483,11 +1487,13 @@ body {
         position: relative;
         height: 500px;
     }
+
     .projects-section-slider .slider {
         display: flex;
         transition: transform 0.5s ease-in-out;
         height: 100%;
     }
+
     .projects-section-slider img {
         width: 100%;
         height: 100%;
@@ -1495,57 +1501,71 @@ body {
         flex-shrink: 0;
         border-radius: 10px;
     }
+
     .projects-section-title {
         font-size: 35px;
         margin-bottom: 20px;
     }
+
     .projects-section-title .highlight {
         color: #ff0000;
     }
+
     .projects-section-intro {
         padding-top: 15px;
         padding-bottom: 15px;
         color: #A9A9A9;
     }
+
     .projects-section-content {
         margin-top: 40px;
         max-width: 1440px;
     }
+
     .projects-section-item {
         margin-bottom: 60px;
     }
+
     .projects-section-item h3 {
         font-size: 20px;
         padding-top: 10px;
         padding-bottom: 10px;
     }
+
     .projects-section-item .description {
         color: #A9A9A9;
     }
+
     .projects-section-item .details {
         color: #A9A9A9;
     }
+
     .projects-section-item .conclusion {
         color: #A9A9A9;
     }
+
     .projects-section-item .stack {
         color: #A9A9A9;
     }
+
     .projects-title {
         color: white;
         font-size: 21px;
         margin-bottom: 20px;
         margin-top: 30px;
     }
+
     .projects-section-item li {
         list-style: none;
     }
+
     .projects-section-item .stack {
         display: grid;
         grid-template-columns: repeat(3, 1fr);
         width: 600px;
         gap: 10px;
     }
+
     .projects-section-item .stack li {
         text-align: center;
         border-radius: 6px;
@@ -1553,6 +1573,7 @@ body {
         box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
         border: 1px solid #A9A9A9;
     }
+
     /* Projects Section End */
 
     /* Resume Section */
@@ -1561,34 +1582,43 @@ body {
         background-color: transparent;
         color: white;
         font-family: "Kode Mono", monospace;
-        max-width: 1440px;
-        margin: 0 auto;
-    }
-    .resume-section-container {
         display: flex;
         flex-direction: column;
+        padding-left: 48px;
+        padding-right: 48px;
     }
+
+    .resume-section-container {
+        margin: 0 auto;
+        max-width: 1440px;
+    }
+
     .resume-section-title {
         font-size: 35px;
         margin-bottom: 30px;
     }
+
     .resume-section-title .highlight {
         color: #ff0000;
     }
+
     .resume-section-content .timeline {
         border-left: 2px solid #ff0000;
         padding-left: 30px;
     }
+
     .resume-section-content h2 {
         color: white;
         font-size: 22px;
         margin-bottom: 30px;
         margin-top: 40px;
     }
+
     .resume-section-content-item {
         position: relative;
         margin-bottom: 40px;
     }
+
     .resume-section-content-item .dot {
         position: absolute;
         left: -9px;
@@ -1600,6 +1630,7 @@ body {
         border-radius: 2px;
         z-index: 2;
     }
+
     .resume-section-content-item .card {
         background: transparent;
         padding: 20px;
@@ -1607,18 +1638,25 @@ body {
         backdrop-filter: blur(10px);
         box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
     }
+
     .resume-section-content-item .card h4 {
         padding-bottom: 10px;
+
+        /*Used as a placeholder*/
+        padding-right: 1000px;
     }
+
     .resume-section-content-item .card p {
         color: #A9A9A9;
     }
+
     .resume-section-content-item .date {
         color: #ff0000;
         font-weight: bold;
         font-size: 0.9rem;
         margin-bottom: 5px;
     }
+
     /* Resume Section End */
 
     /* Credentials Section */
@@ -1627,37 +1665,46 @@ body {
         background-color: transparent;
         color: white;
         font-family: "Kode Mono", monospace;
-        max-width: 1440px;
-        margin: 0 auto;
-    }
-    .credentials-section-container {
         display: flex;
         flex-direction: column;
+        padding-left: 48px;
+        padding-right: 48px;
     }
+
+    .credentials-section-container {
+        margin: 0 auto;
+        max-width: 1440px;           
+    }
+
     .credentials-section-title {
         font-size: 35px;
         margin-bottom: 30px;
     }
+
     .credentials-section-title .highlight {
         color: #ff0000;
     }
+
     .credentials-section-intro {
         padding-top: 15px;
         padding-bottom: 15px;
         color: #A9A9A9;
     }
+
     .credentials-section-content {
         display: grid;
         grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
         gap: 3rem;
         padding: 1rem;
     }
+
     .credentials-section-item {
         display: flex;
         flex-direction: column;
         text-align: center;
         align-items: center;
     }
+
     .credentials-section-item .text {
         background: transparent;
         padding: 10px;
@@ -1667,17 +1714,20 @@ body {
         border-radius: 8px;
         max-width: 600px;
     }
+
     .credentials-section-item .date {
         color: #ff0000;
         font-weight: bold;
         font-size: 0.9rem;
         margin-bottom: 5px;
     }
+
     .credentials-section-item h3 {
         padding-bottom: 5px;
         font-size: 15px;
         color: white;
     }
+
     .credentials-section-item img {
         width: 100%;
         max-width: 600px;
@@ -1688,10 +1738,12 @@ body {
         transition: transform 0.3s ease;
         border: 3px solid #ff0000;
     }
+
     .credentials-section-item img:hover {
         transform: scale(1.05);
         cursor: pointer;
     }
+
     /* Credentials Section End */
 
     /* Contact Section */
@@ -1700,42 +1752,53 @@ body {
         background-color: transparent;
         color: white;
         font-family: "Kode Mono", monospace;
-        max-width: 1440px;
-        margin: 0 auto;
         margin-bottom: 100px;
-    }
-    .contact-section-container {
         display: flex;
         flex-direction: column;
+        padding-left: 48px;
+        padding-right: 48px;
     }
+
+    .contact-section-container {
+        margin: 0 auto;
+        max-width: 1440px;      
+    }
+
     .contact-section-title {
         font-size: 35px;
         padding-bottom: 15px;
     }
+
     .contact-section-title .highlight {
         color: #ff0000;
     }
+
     .contact-section-intro {
         font-size: 16px;
         margin-bottom: 40px;
         color: #A9A9A9;
     }
+
     .contact-section-form {
         display: flex;
         flex-direction: column;
         gap: 1.5rem;
     }
+
     .contact-section-form .form-group {
         display: flex;
         flex-direction: column;
         text-align: left;
     }
+
     .contact-section-form .form-group label {
         margin-bottom: 0.5rem;
     }
+
     .contact-section-form .form-group .highlight {
         color: #ff0000;
     }
+
     .contact-section-form .form-group input,
     .form-group textarea {
         padding: 0.75rem 1rem;
@@ -1747,15 +1810,18 @@ body {
         color: white;
         transition: 0.3s ease;
     }
+
     .contact-section-form .form-group input:focus,
     .form-group textarea:focus {
         outline: none;
         box-shadow: 0 0 0 1.5px white;
     }
+
     .contact-section-form .form-group input::placeholder,
     textarea::placeholder {
         color: #94a3b8;
     }
+
     .contact-section-form .submit-button {
         background-color: #ff0000;
         color: white;
@@ -1767,10 +1833,12 @@ body {
         cursor: pointer;
         transition: 0.3s ease;
     }
+
     .contact-section-form .submit-button:hover {
         background-color: transparent;
         color: #ff0000;
     }
+
     /* Contact Section End */
     /* Footer */
     .footer {
@@ -1783,15 +1851,18 @@ body {
         backdrop-filter: blur(10px);
         box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
     }
+
     .footer-content {
         max-width: 1440px;
         margin: 0 auto;
         padding: 0 20px;
         line-height: 30px;
     }
+
     .footer-content .highlight {
         color: #ff0000;
     }
+
     /* Footer End */
     /* ==================== */
     /* === Desktop End === */
