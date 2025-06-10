@@ -733,6 +733,26 @@ body {
         color: #A9A9A9;
     }
 
+    .projects-section-item-mobile .sources {
+        display: flex;
+        gap: 35px;
+    }
+
+    .projects-section-item-mobile svg {
+        display: block;
+        margin: auto;
+        transition: transform 0.3s ease;
+        width: 30px;
+        height: 30px;
+        color: #A9A9A9;
+        stroke: transparent;
+    }
+
+    .projects-section-item-mobile svg:hover {
+        transform: scale(1.2);
+        color: white;
+    }
+
 
     .projects-title {
         color: white;
@@ -1548,6 +1568,28 @@ body {
         color: #A9A9A9;
     }
 
+
+    .projects-section-item .sources {
+        display: flex;
+        gap: 35px;
+    }
+
+    .projects-section-item svg {
+        display: block;
+        margin: auto;
+        transition: transform 0.3s ease;
+        width: 30px;
+        height: 30px;
+        color: #A9A9A9;
+        stroke: transparent;
+    }
+
+    .projects-section-item svg:hover {
+        transform: scale(1.2);
+        color: white;
+    }
+
+
     .projects-title {
         color: white;
         font-size: 21px;
@@ -1673,7 +1715,7 @@ body {
 
     .credentials-section-container {
         margin: 0 auto;
-        max-width: 1440px;           
+        max-width: 1440px;
     }
 
     .credentials-section-title {
@@ -1761,7 +1803,7 @@ body {
 
     .contact-section-container {
         margin: 0 auto;
-        max-width: 1440px;      
+        max-width: 1440px;
     }
 
     .contact-section-title {
@@ -1778,6 +1820,7 @@ body {
         margin-bottom: 40px;
         color: #A9A9A9;
     }
+
 
     .contact-section-form {
         display: flex;

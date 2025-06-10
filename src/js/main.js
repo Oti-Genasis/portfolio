@@ -2,8 +2,10 @@ import "./particles.js";
 import "./logoAnimation.js";
 import "./typeWriter.js";
 
+
+
 document.addEventListener('DOMContentLoaded', () => {
-  
+
   // Load images faster
   document.querySelectorAll("img").forEach(img => {
     img.setAttribute("loading", "eager");
