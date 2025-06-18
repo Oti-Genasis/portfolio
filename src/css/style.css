@@ -397,7 +397,7 @@ body {
 
         box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
         border-radius: 10px;
-        background: linear-gradient(to top, rgba(0, 0, 0, 1), rgba(0, 0, 0, 0));
+        background: linear-gradient(to top, #a9a9a9, rgba(0, 0, 0, 0));
 
     }
 
@@ -543,7 +543,7 @@ body {
 
         box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
         border-radius: 10px;
-        background: linear-gradient(to top, rgba(0, 0, 0, 1), rgba(0, 0, 0, 0));
+        background: linear-gradient(to top, #a9a9a9, rgba(0, 0, 0, 0));
     }
 
     .about-section-text-mobile {
@@ -1196,7 +1196,7 @@ body {
         font-family: "Kode Mono", monospace;
     }
 
-    
+
     .hero-section-content {
         display: grid;
         grid-template-columns: minmax(600px, 1fr) minmax(700px, 1fr);
@@ -1217,7 +1217,7 @@ body {
 
         box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
         border-radius: 10px;
-        background: linear-gradient(to top, rgba(0, 0, 0, 1), rgba(0, 0, 0, 0));
+        background: linear-gradient(to top, #a9a9a9, rgba(0, 0, 0, 0));
     }
 
     .hero-section-text {
@@ -1371,7 +1371,7 @@ body {
 
         box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
         border-radius: 10px;
-        background: linear-gradient(to top, rgba(0, 0, 0, 1), rgba(0, 0, 0, 0));
+        background: linear-gradient(to top, #A9A9A9, rgba(0, 0, 0, 0));
 
     }
 
@@ -1640,24 +1640,15 @@ body {
     }
 
     .resume-section-container {
-        margin: 0 auto;
-        max-width: 1440px;
+
         display: grid;
-        grid-template-columns: minmax(600px, 1fr) minmax(300px, 1fr);
+        grid-template-columns: repeat(3, 1fr);
         gap: 10px;
     }
 
-    .resume-section-content .education {
-        order: 1;
-        border-right: 2px solid #ff0000;
-    }
-
-    .resume-section-content .experience {
-        order: 2;
-    }
-
-    .resume-section-content .volunteering {
-        order: 1;
+    .resume-section-content-width {
+        margin: 0 auto;
+        max-width: 1440px;
     }
 
     .resume-section-title {
