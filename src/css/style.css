@@ -950,6 +950,11 @@ body {
     /* Credentials Section End */
 
     /* Contact Section */
+
+    .contact-section-content .left-content {
+        display: none;
+    }
+
     .contact-section-mobile {
         background-color: transparent;
         color: white;
@@ -1819,9 +1824,15 @@ body {
         max-width: 1440px;
     }
 
+    .contact-section-content {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 80px;
+    }
+
     .contact-section-title {
         font-size: 35px;
-        padding-bottom: 15px;
+        padding-bottom: 55px;
     }
 
     .contact-section-title .highlight {
@@ -1832,6 +1843,34 @@ body {
         font-size: 16px;
         margin-bottom: 40px;
         color: #A9A9A9;
+    }
+
+    .contact-section-infos .info-box {
+        background: transparent;
+        padding: 20px;
+        border-radius: 8px;
+        box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+        backdrop-filter: blur(10px);
+        margin-bottom: 20px;
+    }
+
+    .contact-section-infos .info-box svg {
+        width: 30px;
+        height: 30px;
+        fill: #ff0000;
+        margin-right: 10px;
+    }
+
+    .contact-section-infos a {
+        color: white;
+        text-decoration: none;
+        font-size: 16px;
+        font-family: "Kode Mono", monospace;
+        transition: color 0.3s ease;
+
+        position: absolute;
+        top: 50%;
+        transform: translate(10%, -50%);
     }
 
 

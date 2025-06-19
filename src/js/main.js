@@ -1,6 +1,7 @@
 import "./particles.js";
 import "./logoAnimation.js";
 import "./typeWriter.js";
+import "./globe.js";
 
 
 

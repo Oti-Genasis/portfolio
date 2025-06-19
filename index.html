@@ -853,8 +853,6 @@
 
     </div>
 
-
-
   </section>
 
   <!-- Resume Section end -->
@@ -920,50 +918,109 @@
         <span class="highlight">Me</span>
       </h1>
 
-      <p class="contact-section-intro contact-section-intro-mobile">
-        Interested in my profile? I'd be happy to connect with you about a job opportunity. Send me a message and I’ll
-        get back to you shortly.
-      </p>
+      <div class="contact-section-content">
 
-      <form class="contact-section-form contact-section-form-mobile"
-        action="https://formsubmit.co/mail@otnielsarambe.com" method="POST">
+        <div class="left-content">
+          <div class="contact-section-infos">
+            <div class="info-box">
 
-        <div class="form-group">
-          <label for="name">Full Name<span class="highlight">*</span></label>
-          <input type="text" id="name" name="name" placeholder="John Doe" required>
+              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                class="bi bi-envelope-at" viewBox="0 0 16 16">
+                <path
+                  d="M2 2a2 2 0 0 0-2 2v8.01A2 2 0 0 0 2 14h5.5a.5.5 0 0 0 0-1H2a1 1 0 0 1-.966-.741l5.64-3.471L8 9.583l7-4.2V8.5a.5.5 0 0 0 1 0V4a2 2 0 0 0-2-2zm3.708 6.208L1 11.105V5.383zM1 4.217V4a1 1 0 0 1 1-1h12a1 1 0 0 1 1 1v.217l-7 4.2z" />
+                <path
+                  d="M14.247 14.269c1.01 0 1.587-.857 1.587-2.025v-.21C15.834 10.43 14.64 9 12.52 9h-.035C10.42 9 9 10.36 9 12.432v.214C9 14.82 10.438 16 12.358 16h.044c.594 0 1.018-.074 1.237-.175v-.73c-.245.11-.673.18-1.18.18h-.044c-1.334 0-2.571-.788-2.571-2.655v-.157c0-1.657 1.058-2.724 2.64-2.724h.04c1.535 0 2.484 1.05 2.484 2.326v.118c0 .975-.324 1.39-.639 1.39-.232 0-.41-.148-.41-.42v-2.19h-.906v.569h-.03c-.084-.298-.368-.63-.954-.63-.778 0-1.259.555-1.259 1.4v.528c0 .892.49 1.434 1.26 1.434.471 0 .896-.227 1.014-.643h.043c.118.42.617.648 1.12.648m-2.453-1.588v-.227c0-.546.227-.791.573-.791.297 0 .572.192.572.708v.367c0 .573-.253.744-.564.744-.354 0-.581-.215-.581-.8Z" />
+              </svg>
+
+              <a href="mailto:mail@otnielsarambe.com" target="_blank" rel="noopener noreferrer">mail@otnielsarambe.com</a>
+            </div>
+
+            <div class="info-box">
+
+              <svg viewBox="-4 0 32 32" version="1.1" xmlns="http://www.w3.org/2000/svg"
+                xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:sketch="http://www.bohemiancoding.com/sketch/ns"
+                fill="#000000">
+                <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+                <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g>
+                <g id="SVGRepo_iconCarrier">
+                  <title>location</title>
+                  <desc>Created with Sketch Beta.</desc>
+                  <defs> </defs>
+                  <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" sketch:type="MSPage">
+                    <g id="Icon-Set" sketch:type="MSLayerGroup" transform="translate(-104.000000, -411.000000)"
+                      fill="#ff0000">
+                      <path
+                        d="M116,426 C114.343,426 113,424.657 113,423 C113,421.343 114.343,420 116,420 C117.657,420 119,421.343 119,423 C119,424.657 117.657,426 116,426 L116,426 Z M116,418 C113.239,418 111,420.238 111,423 C111,425.762 113.239,428 116,428 C118.761,428 121,425.762 121,423 C121,420.238 118.761,418 116,418 L116,418 Z M116,440 C114.337,440.009 106,427.181 106,423 C106,417.478 110.477,413 116,413 C121.523,413 126,417.478 126,423 C126,427.125 117.637,440.009 116,440 L116,440 Z M116,411 C109.373,411 104,416.373 104,423 C104,428.018 114.005,443.011 116,443 C117.964,443.011 128,427.95 128,423 C128,416.373 122.627,411 116,411 L116,411 Z"
+                        id="location" sketch:type="MSShapeGroup"> </path>
+                    </g>
+                  </g>
+                </g>
+              </svg>
+
+              <a href="https://maps.app.goo.gl/W7foLF6QmyEdMbPZA" target="_blank" rel="noopener noreferrer">Rouyn-Noranda, Canada</a>
+
+            </div>
+          </div>
+
+          <canvas id="cobe" style="width: 500px; height: 500px" width="500" height="500"></canvas>
+
         </div>
 
-        <div class="form-group">
-          <label for="email">Email Address<span class="highlight">*</span></label>
-          <input type="email" id="email" name="email" placeholder="you@example.com" required>
+        <div class="right-content">
+
+          <p class="contact-section-intro contact-section-intro-mobile">
+            Interested in my profile? I'd be happy to connect with you about a job opportunity. Send me a message and
+            I’ll
+            get back to you shortly.
+          </p>
+
+          <form class="contact-section-form contact-section-form-mobile"
+            action="https://formsubmit.co/mail@otnielsarambe.com" method="POST">
+
+            <div class="form-group">
+              <label for="name">Full Name<span class="highlight">*</span></label>
+              <input type="text" id="name" name="name" placeholder="John Doe" required>
+            </div>
+
+            <div class="form-group">
+              <label for="email">Email Address<span class="highlight">*</span></label>
+              <input type="email" id="email" name="email" placeholder="you@example.com" required>
+            </div>
+
+            <div class="form-group">
+              <label for="phone">Phone Number</label>
+              <input type="tel" id="phone" name="phone" placeholder="+1 234 567 8901">
+            </div>
+
+            <div class="form-group">
+              <label for="subject">Subject</label>
+              <input type="text" id="subject" name="subject" placeholder="Open position at our company">
+            </div>
+
+            <div class="form-group">
+              <label for="message">Message<span class="highlight">*</span></label>
+              <textarea id="message" name="message" rows="5" placeholder="Write your message..." required></textarea>
+            </div>
+
+            <input type="text" name="_honey" style="display:none">
+
+            <input type="hidden" name="_captcha" value="false">
+
+            <input type="hidden" name="_next" value="https://otnielsarambe.com/thank_you.html">
+
+            <button type="submit" class="submit-button">Send</button>
+
+          </form>
+
         </div>
 
-        <div class="form-group">
-          <label for="phone">Phone Number</label>
-          <input type="tel" id="phone" name="phone" placeholder="+1 234 567 8901">
-        </div>
-
-        <div class="form-group">
-          <label for="subject">Subject</label>
-          <input type="text" id="subject" name="subject" placeholder="Open position at our company">
-        </div>
-
-        <div class="form-group">
-          <label for="message">Message<span class="highlight">*</span></label>
-          <textarea id="message" name="message" rows="5" placeholder="Write your message..." required></textarea>
-        </div>
-
-        <input type="text" name="_honey" style="display:none">
-
-        <input type="hidden" name="_captcha" value="false">
-
-        <input type="hidden" name="_next" value="https://otnielsarambe.com/thank_you.html">
-
-        <button type="submit" class="submit-button">Send</button>
-
-      </form>
+      </div>
 
     </div>
+
+
+
+
 
   </section>
 
