@@ -4,12 +4,24 @@ import "./typeWriter.js";
 import "./globe.js";
 
 
-
 document.addEventListener('DOMContentLoaded', () => {
 
   // Load images faster
   document.querySelectorAll("img").forEach(img => {
     img.setAttribute("loading", "eager");
+  });
+
+  // Change language on click
+  document.getElementById('change-lang-button').addEventListener('click', () => {
+    const path = window.location.pathname;
+
+    if (path.startsWith('/en/')) {
+      window.location.href = '/fr/index.html';
+    } else if (path.startsWith('/fr/')) {
+      window.location.href = '/en/index.html';
+    } else {
+      window.location.href = '/en/index.html';
+    }
   });
 
   // Fade-In-Animation

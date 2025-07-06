@@ -1,5 +1,7 @@
 //Animation for the title in section 'Hero'
 
+const lang = document.documentElement.lang;
+
 function startTypingAnimationByClass(className, texts, typingSpeed = 100, pauseDelay = 2500) {
 
   // Select all elements with the given class name
@@ -39,24 +41,51 @@ function startTypingAnimationByClass(className, texts, typingSpeed = 100, pauseD
   });
 }
 
-startTypingAnimationByClass(
-  "hero-section-text-title1",
-  [
-    "IT Analyst",
-    "IT Technician",
-    "Network Technician",
-    "Network Administrator",
-    "System Administrator"
-  ]
-);
+if (lang === "fr") {
+  // Start typing animation for French
+  startTypingAnimationByClass(
+    "hero-section-text-title1",
+    [
+      "Analyste en informatique",
+      "Technicien en informatique",
+      "Technicien en réseaux",
+      "Administrateur réseau",
+      "Administrateur système"
+    ]
+  );
 
-startTypingAnimationByClass(
-  "hero-section-text-title2-title",
-  [
-    "IT Analyst",
-    "IT Technician",
-    "Network Technician",
-    "Network Administrator",
-    "System Administrator"
-  ]
-);
+  startTypingAnimationByClass(
+    "hero-section-text-title2-title",
+    [
+      "Analyste en informatique",
+      "Technicien en informatique",
+      "Technicien en réseaux",
+      "Administrateur réseau",
+      "Administrateur système"
+    ]
+  );
+}
+else {
+  startTypingAnimationByClass(
+    "hero-section-text-title1",
+    [
+      "IT Analyst",
+      "IT Technician",
+      "Network Technician",
+      "Network Administrator",
+      "System Administrator"
+    ]
+  );
+
+  startTypingAnimationByClass(
+    "hero-section-text-title2-title",
+    [
+      "IT Analyst",
+      "IT Technician",
+      "Network Technician",
+      "Network Administrator",
+      "System Administrator"
+    ]
+  );
+}
+
