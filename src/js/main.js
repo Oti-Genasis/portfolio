@@ -12,16 +12,17 @@ document.addEventListener('DOMContentLoaded', () => {
   });
 
   // Change language on click
-  document.getElementById('change-lang-button').addEventListener('click', () => {
-    const path = window.location.pathname;
-
-    if (path.startsWith('/en/')) {
-      window.location.href = '/fr/index.html';
-    } else if (path.startsWith('/fr/')) {
-      window.location.href = '/en/index.html';
-    } else {
-      window.location.href = '/en/index.html';
-    }
+  document.querySelectorAll('#change-lang-button').forEach(btn => {
+    btn.addEventListener('click', () => {
+      const path = window.location.pathname;
+      if (path.startsWith('/en/')) {
+        window.location.href = '/fr/index.html';
+      } else if (path.startsWith('/fr/')) {
+        window.location.href = '/en/index.html';
+      } else {
+        window.location.href = '/en/index.html';
+      }
+    });
   });
 
   // Fade-In-Animation
