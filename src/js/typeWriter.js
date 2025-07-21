@@ -47,10 +47,10 @@ if (lang === "fr") {
     "hero-section-text-title1",
     [
       "Analyste en informatique",
-      "Technicien en informatique",
-      "Technicien en réseaux",
       "Administrateur réseau",
-      "Administrateur système"
+      "Administrateur système",
+      "Développeur web",
+      "Développeur Full-Stack"
     ]
   );
 
@@ -58,10 +58,10 @@ if (lang === "fr") {
     "hero-section-text-title2-title",
     [
       "Analyste en informatique",
-      "Technicien en informatique",
-      "Technicien en réseaux",
       "Administrateur réseau",
-      "Administrateur système"
+      "Administrateur système",
+      "Développeur web",
+      "Développeur Full-Stack"
     ]
   );
 }
@@ -70,10 +70,10 @@ else {
     "hero-section-text-title1",
     [
       "IT Analyst",
-      "IT Technician",
-      "Network Technician",
       "Network Administrator",
-      "System Administrator"
+      "System Administrator",
+      "Web Developer",
+      "Full-Stack Developer"
     ]
   );
 
@@ -81,10 +81,10 @@ else {
     "hero-section-text-title2-title",
     [
       "IT Analyst",
-      "IT Technician",
-      "Network Technician",
       "Network Administrator",
-      "System Administrator"
+      "System Administrator",
+      "Web Developer",
+      "Full-Stack Developer"
     ]
   );
 }
