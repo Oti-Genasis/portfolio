@@ -1,4 +1,5 @@
-import createGlobe from 'https://cdn.skypack.dev/cobe'
+/*import createGlobe from 'https://cdn.skypack.dev/cobe'*/
+import createGlobe from "https://esm.sh/cobe";
 
 let phi = 0
 let startX = 0
